@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Jordan Rose Drums`,
+    description: `Jordan Rose, New York City drummer.`,
+    author: `Trevor Watson`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,6 +11,35 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts-v2`,
+      options: {
+        fonts: [
+          {
+            family: "Roboto Slab",
+            variable: true,
+            weights: ["200..900"],
+          },
+          {
+            family: "Nanum Brush Script",
+            variable: true,
+            weights: ["200..900"],
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `jrosedrums`,
       },
     },
     `gatsby-transformer-sharp`,
