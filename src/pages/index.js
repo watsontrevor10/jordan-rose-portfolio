@@ -19,13 +19,13 @@ const IndexPage = () => (
   <Layout>
     <div style={{ backgroundColor: "#f9eff9" }}>
       <SEO title="Home" />
-      <MainCont>
+      <div>
         <h3>
           Jordan is a freelance drummer out of New York City that performs a
           wide variety of genres and with a number of touring artists such as
           Theo Katzman and Caleb Howley, and groups localy in New York.
         </h3>
-      </MainCont>
+      </div>
     </div>
     <About />
     <Live />

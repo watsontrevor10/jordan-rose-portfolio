@@ -4,9 +4,9 @@ import React from "react"
 import { MainCont } from "../styles/mainStyles"
 
 const Studio = () => (
-  <MainCont>
+  <div>
     <h1>Studio</h1>
-  </MainCont>
+  </div>
 )
 
 export default Studio

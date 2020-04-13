@@ -4,9 +4,9 @@ import React from "react"
 import { MainCont } from "../styles/mainStyles"
 
 const Live = () => (
-  <MainCont>
+  <div>
     <h1>Live</h1>
-  </MainCont>
+  </div>
 )
 
 export default Live
