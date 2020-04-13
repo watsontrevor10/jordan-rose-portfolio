@@ -6,7 +6,7 @@ import { MainCont } from "../styles/mainStyles"
 
 const About = () => {
   return (
-    <div>
+    <div id="about">
       <div>
         <h1>About Me</h1>
         <p>

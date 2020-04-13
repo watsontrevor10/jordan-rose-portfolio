@@ -4,7 +4,7 @@ import React from "react"
 import { MainCont } from "../styles/mainStyles"
 
 const Contact = () => (
-  <div>
+  <div id="contact">
     <h1>Contact Me</h1>
     <form>
       <div style={{ display: "flex", flexDirection: "column", maxWidth: "500px" }}> 

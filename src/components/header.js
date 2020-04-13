@@ -21,16 +21,16 @@ const Header = ({ siteTitle }) => (
         <StyleLink to="/">Home</StyleLink>
       </NavItem>
       <NavItem>
-        <StyleLink to="/about">About</StyleLink>
+        <StyleLink to="#about">About</StyleLink>
       </NavItem>
       <NavItem>
-        <StyleLink to="/live">Live</StyleLink>
+        <StyleLink to="#live">Live</StyleLink>
       </NavItem>
       <NavItem>
-        <StyleLink to="/studio">Studio</StyleLink>
+        <StyleLink to="#studio">Studio</StyleLink>
       </NavItem>
       <NavItem>
-        <StyleLink to="/contact">Contact</StyleLink>
+        <StyleLink to="#contact">Contact</StyleLink>
       </NavItem>
     </HeadCont>
     {/* Hero Image with overlay text */}
