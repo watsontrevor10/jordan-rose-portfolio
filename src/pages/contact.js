@@ -1,8 +1,9 @@
 import React from 'react'
 
-const LiveMusic = () => (
-  <>
-  </>
+const Contact = () => (
+  <div>
+    <h1>Contact Me</h1>
+  </div>
 )
 
-export default LiveMusic
+export default Contact
