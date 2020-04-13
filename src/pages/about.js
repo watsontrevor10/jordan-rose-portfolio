@@ -2,12 +2,12 @@ import React from "react"
 import styled from "styled-components"
 
 // Styles
-import { TextCont } from "../styles/mainStyles"
+import { MainCont } from "../styles/mainStyles"
 
 const About = () => {
   return (
     <div>
-      <TextCont>
+      <MainCont>
         <h1>About Me</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -18,7 +18,7 @@ const About = () => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-      </TextCont>
+      </MainCont>
     </div>
   )
 }

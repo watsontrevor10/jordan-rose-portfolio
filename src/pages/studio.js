@@ -1,9 +1,12 @@
 import React from "react"
 
+// Styles
+import { MainCont } from "../styles/mainStyles"
+
 const Studio = () => (
-  <div>
+  <MainCont>
     <h1>Studio</h1>
-  </div>
+  </MainCont>
 )
 
 export default Studio

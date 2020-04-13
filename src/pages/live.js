@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react"
+
+// Styles
+import { MainCont } from "../styles/mainStyles"
 
 const Live = () => (
-  <div>
+  <MainCont>
     <h1>Live</h1>
-  </div>
+  </MainCont>
 )
 
 export default Live

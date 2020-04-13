@@ -1,7 +1,10 @@
 import React from "react"
 
+// Styles 
+import { MainCont } from "../styles/mainStyles"
+
 const Contact = () => (
-  <div>
+  <MainCont>
     <h1>Contact Me</h1>
     <form>
       <div style={{ display: "flex", flexDirection: "column", maxWidth: "500px" }}> 
@@ -11,7 +14,7 @@ const Contact = () => (
         <input type="submit" value="Submit" />
       </div>
     </form>
-  </div>
+  </MainCont>
 )
 
 export default Contact

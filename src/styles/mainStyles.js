@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const TextCont = styled.div`
+export const MainCont = styled.div`
   margin: 0 auto;
   max-width: 960;
   padding: 1rem 2rem 1.45rem;
