@@ -11,7 +11,6 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
-import HeroImg from "../components/heroImg"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,7 +25,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      {/* <HeroImg /> */}
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <main>{children}</main>
