@@ -1,34 +1,56 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import styled from "styled-components"
+
+// Images
+import HeroImg from "../components/heroImg"
+
+// Styles
+import { HeadCont, NavItem, HeadText } from "../styles/mainStyles"
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#57372c`,
       marginBottom: `1.45rem`,
     }}
   >
-    <div
-      style={{
-        // margin: `0 auto`,
-        // maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
+    {/* Navbar */}
+    <HeadCont>
+      <NavItem>
+        <StyleLink to="/">Home</StyleLink>
+      </NavItem>
+      <NavItem>
+        <StyleLink to="/about">About</StyleLink>
+      </NavItem>
+      <NavItem>
+        <StyleLink to="/">Live</StyleLink>
+      </NavItem>
+      <NavItem>
+        <StyleLink to="/">Studio</StyleLink>
+      </NavItem>
+      <NavItem>
+        <StyleLink to="/">Contact</StyleLink>
+      </NavItem>
+    </HeadCont>
+    {/* Hero Image with overlay text */}
+    <div>
+      <div style={{ position: "relative" }}>
+        <HeroImg />
+      </div>
+      {/* Overlay Text */}
+      <HeadText>
+        <h1
           style={{
-            color: `white`,
-            textDecoration: `none`,
-            fontFamily: 'Nanum Brush Script, cursive',
+            fontSize: "80px",
           }}
         >
-          {siteTitle}
-        </Link>
-      </h1>
+          <StyleLink to="/">{siteTitle}</StyleLink>
+        </h1>
+        <h3>New York City Drummer</h3>
+      </HeadText>
     </div>
+    {/* Nav Bar */}
   </header>
 )
 
@@ -40,4 +62,8 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
+const StyleLink = styled(Link)`
+  color: #fcfdfe;
+  text-decoration: none;
+`
 export default Header

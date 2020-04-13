@@ -1,20 +1,30 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+// Pages 
+import About from './about'
+
+// Styles
+import { TextCont } from "../styles/mainStyles"
+
+// Images
+
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div style={{ backgroundColor: "#f9eff9" }}>
+      <SEO title="Home" />
+      <TextCont>
+        <h3>
+          Jordan is a freelance drummer out of New York City that performs a
+          wide variety of genres and with a number of touring artists such as
+          Theo Katzman and Caleb Howley, and groups localy in New York.
+        </h3>
+      </TextCont>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <About />
   </Layout>
 )
 
