@@ -30,7 +30,7 @@ const Work = () => (
     <div
       style={{
         position: "absolute",
-        top: "7.5em",
+        top: "5em",
         left: "18%",
         color: "white",
         width: "60%",
@@ -39,7 +39,7 @@ const Work = () => (
       }}
     >
       <h3>Drummer for live and studio sessions</h3>
-      <h4>Theo Katzman, Cory Wong, Caleb Hawley, Lohai</h4>
+      {/* <h4>Theo Katzman, Cory Wong, Caleb Hawley, Lohai</h4> */}
     </div>
     <FlexCont>
       <iframe

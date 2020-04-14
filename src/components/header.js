@@ -47,7 +47,7 @@ const Header = ({ siteTitle }) => (
         >
           <StyleLink to="/">{siteTitle}</StyleLink>
         </h1>
-        <h3>New York City Drummer</h3>
+        {/* <h3>New York City Drummer</h3> */}
       </HeadText>
     </div>
     {/* Nav Bar */}
