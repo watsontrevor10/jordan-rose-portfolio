@@ -29,7 +29,7 @@ export const HeadText = styled.div`
   position: absolute;
   width: 90%;
   top: 30%;
-  left: 5%;
+  left: 6%;
   color: #fcfdfe;
   text-align: center;
   /* animation:  2s linear;

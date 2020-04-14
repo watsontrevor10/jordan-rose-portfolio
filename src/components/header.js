@@ -24,7 +24,7 @@ const Header = ({ siteTitle }) => (
         <StyleLink to="#about">About</StyleLink>
       </NavItem>
       <NavItem>
-        <StyleLink to="#live">Live</StyleLink>
+        <StyleLink to="#live">Work</StyleLink>
       </NavItem>
       <NavItem>
         <StyleLink to="#studio">Studio</StyleLink>

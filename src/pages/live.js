@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Insta from "../components/instaAPI"
 
 // Images
 import TkImg from "../components/tkLiveImg"
@@ -42,7 +43,7 @@ const Work = () => (
     </div>
     <FlexCont>
       <iframe
-        width="400px"
+        width="450"
         height="250px"
         src="https://www.youtube.com/embed/3qcjptTunXQ"
         frameborder="0"
@@ -50,7 +51,7 @@ const Work = () => (
         allowfullscreen
       ></iframe>
       <iframe
-        width="400"
+        width="450"
         height="250"
         src="https://www.youtube.com/embed/n1knAEiVv0s"
         frameborder="0"
@@ -58,7 +59,7 @@ const Work = () => (
         allowfullscreen
       ></iframe>
       <iframe
-        width="400"
+        width="450"
         height="250"
         src="https://www.youtube.com/embed/IFzx8SYzj7Q"
         frameborder="0"
@@ -66,7 +67,7 @@ const Work = () => (
         allowfullscreen
       ></iframe>
       <iframe
-        width="400"
+        width="450"
         height="250"
         src="https://www.youtube.com/embed/kWbQR_k1IFA"
         frameborder="0"
@@ -74,12 +75,14 @@ const Work = () => (
         allowfullscreen
       ></iframe>
     </FlexCont>
+    {/* <Insta /> */}
   </div>
 )
 
 const ImgCont = styled.div`
   margin: 0 1.4em 1em 0;
   box-shadow: 1px 3px 3px black;
+  margin: auto;
   /* float: left; */
 `
 
@@ -88,6 +91,7 @@ const FlexCont = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 1em;
   /* margin: 10px;  */
 `
 
