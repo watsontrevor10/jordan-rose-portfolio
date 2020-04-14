@@ -17,13 +17,17 @@ import { MainCont } from "../styles/mainStyles"
 
 const IndexPage = () => (
   <Layout>
-    <div style={{ backgroundColor: "#f9eff9" }}>
-      <SEO title="Home" />
+    <div>
+      <SEO title="Jordan Rose Drums" />
       <div>
         <h3>
-          Jordan is a freelance drummer out of New York City that performs a
-          wide variety of genres and with a number of touring artists such as
-          Theo Katzman and Caleb Howley, and groups localy in New York.
+          Jordan is a professional drummer and percussionist based out of New
+          York City.
+        </h3>
+        <h3>
+          Jordan has performed with a variety of artists in many different
+          genres, toured with artists such as Theo Katzman, Cory Wong, and Caleb
+          Hawley.
         </h3>
       </div>
     </div>

@@ -3,10 +3,10 @@ import { graphql, useStaticQuery } from "gatsby"
 // import styled from "styled-components"
 import Img from "gatsby-image"
 
-const TheoImg = () => {
+const TkDrumset = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "theo-concert.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "tk-drums.jpg" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 1000) {
             ...GatsbyImageSharpFluid
@@ -23,11 +23,11 @@ const TheoImg = () => {
       <div style={{ position: "relative" }}>
         <Img
           fluid={data.placeholderImage.childImageSharp.fluid}
-          alt="Theo Katzman Live"
+          alt="Jordan Rose TK Drumset"
         />
       </div>
     </div>
   )
 }
 
-export default TheoImg
+export default TkDrumset
