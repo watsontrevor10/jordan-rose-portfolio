@@ -1,7 +1,7 @@
 import React from "react"
 
 // Styles 
-import { MainCont } from "../styles/mainStyles"
+import {  } from "../styles/mainStyles"
 
 const Contact = () => (
   <div id="contact">
