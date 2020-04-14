@@ -34,8 +34,8 @@ const Header = ({ siteTitle }) => (
       </NavItem>
     </HeadCont>
     {/* Hero Image with overlay text */}
-    <div>
-      <div style={{ position: "relative" }}>
+    <div style={{ position: "relative" }}>
+      <div>
         <HeroImg />
       </div>
       {/* Overlay Text */}

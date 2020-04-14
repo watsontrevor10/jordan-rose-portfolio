@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 
 export const MainCont = styled.div`
   margin: 0 auto;
@@ -20,15 +20,23 @@ export const HeadStick = styled.div`
   position: sticky;
 `
 
+const appear = keyframes`
+ 0% {opacity: 0;}
+  100% {opacity: 1;}
+`
+
 export const HeadText = styled.div`
   position: absolute;
-  top: 23%;
-  left: 25%;
+  width: 90%;
+  top: 30%;
+  left: 5%;
   color: #fcfdfe;
   text-align: center;
+  /* animation:  2s linear;
+  animation-delay: 1s; */
 `
 
 export const NavItem = styled.h3`
-  padding-right: .7em;
+  padding-right: 0.7em;
   position: sticky;
 `
