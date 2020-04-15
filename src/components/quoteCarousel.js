@@ -36,7 +36,7 @@ const QuoteCarousel = () => {
     }
   }
 
-  setTimeout(() => incrQuote(), 8000)
+  setTimeout(() => incrQuote(), 15000)
 
   return (
     <>
