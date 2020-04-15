@@ -28,7 +28,7 @@ export const HeadText = styled.div`
   width: 90%;
   top: 30%;
   left: 6%;
-  color: #fcfdfe;
+  color: white;
   text-align: center;
 `
 
@@ -63,4 +63,5 @@ export const BannerImgCont = styled.div`
   margin: 0 1.4em 1em 0;
   box-shadow: 1px 3px 3px black;
   margin: auto;
+  opacity: .8;
 `

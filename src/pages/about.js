@@ -24,7 +24,7 @@ const About = () => {
           <TkDrum />
         </BannerImgCont>
       </BannerCont>
-      <SubCont id="about" style={{ backgroundColor: "#83aea7" }}>
+      <SubCont id="about">
         <div>
           <div>
             <p>

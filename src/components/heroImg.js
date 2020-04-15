@@ -6,9 +6,9 @@ import Img from "gatsby-image"
 const HeroImg = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "jordan-hero-wide.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "jordan-main.jpg" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1000) {
+          fluid(quality: 100, maxWidth: 1500) {
             ...GatsbyImageSharpFluid
             originalName
             originalImg

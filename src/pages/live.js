@@ -29,7 +29,10 @@ const Work = () => (
         <h3>Drummer for live and studio sessions</h3>
       </BannerSubtitle> */}
     </BannerCont>
-    <SubCont style={{ backgroundColor: "#924431" }}>
+    <SubCont style={{  }}>
+      <p style={{  }}>
+        A brief description of Jordan's performance schedule and some highlights of his career.
+      </p>
       <FlexCont>
         <iframe
           width="450"

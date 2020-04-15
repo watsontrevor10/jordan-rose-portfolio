@@ -5,7 +5,7 @@ import styled from "styled-components"
 import { SubCont } from "../styles/mainStyles"
 
 const Contact = () => (
-  <SubCont id="contact" style={{ backgroundColor: "#924431" }}>
+  <SubCont id="contact" style={{  }}>
     <h1>Contact Me</h1>
     <Container>
       <TextCont>

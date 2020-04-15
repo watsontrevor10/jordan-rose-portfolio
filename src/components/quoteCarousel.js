@@ -23,13 +23,6 @@ const QuoteCarousel = () => {
       quote:
         "If ever a band leader, tour manager or musical director is in need of a drummer who can step in and play as if he’s been with the group since its inception, then Jordan Rose is unquestionably the drummer for you. . . . I’ve played with some of the most famous drummers the World has to offer. Such names as Buddy Rich, Steve Ferrone from Tom Petty and the Heart Breakers, as well as every other NYC session drummer. Jordan is RIGHT THERE WITH THE CREW! He’ll Give It To You Signed, Sealed, Delivered. ‘Nuf Said…",
     },
-    // {
-    //   name: "Joe Louis Walker",
-    //   bio:
-    //     "Multi-Grammy Award Winner, Member of the American Blues Hall of Fame",
-    //   quote:
-    //     "Whether gigging in Turkey, Cyprus, England, Italy (you get my drift), Jordan Rose was loved by the audience, and made friends/fans all over the world. I know we will be hearing many great musical endeavors from him. So keep your eyes and ears open for Jordan Rose.",
-    // },
   ]
 
   const [activeIndex, setActiveIndex] = useState(0)
@@ -43,7 +36,7 @@ const QuoteCarousel = () => {
     }
   }
 
-  setTimeout(() => incrQuote(), 5000)
+  setTimeout(() => incrQuote(), 8000)
 
   return (
     <>
@@ -57,9 +50,9 @@ const QuoteCarousel = () => {
               <small>
                 <b>{quote.name}</b>
               </small>
-              <Quote>
+              <Bio>
                 <i>{quote.bio}</i>
-              </Quote>
+              </Bio>
             </span>
           </div>
         </QuoteCont>
@@ -84,11 +77,16 @@ const QuoteCont = styled.div`
   border-style: solid 1px grey;
   border-radius: 18px;
   box-shadow: 1px 3px 3px black;
-  background-color: #eee;
+  background-color: #924431;
+  color: #e8d2c7;
 `
 
 const Quote = styled.p`
-  font-size: 16px;
+  font-size: 17px;
+`
+
+const Bio = styled.p`
+  font-size: 12px;
 `
 
 export default QuoteCarousel

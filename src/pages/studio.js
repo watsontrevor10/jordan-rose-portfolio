@@ -24,8 +24,8 @@ const Studio = () => (
         <h3>Studio Recording</h3>
       </BannerSubtitle> */}
     </BannerCont>
-    <SubCont style={{ backgroundColor: "#83aea7" }}>
-      <div>
+    <SubCont >
+      <div style={{ }}>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

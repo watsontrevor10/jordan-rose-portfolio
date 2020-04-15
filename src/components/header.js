@@ -10,7 +10,12 @@ import HeroImg from "../components/heroImg"
 import { HeadCont, NavItem, HeadText } from "../styles/mainStyles"
 
 const Header = ({ siteTitle }) => (
-  <header>
+  <header
+    style={{
+      // marginBottom: `2rem`,
+      // backgroundColor: "#83aea7",
+    }}
+  >
     {/* Navbar */}
     <HeadCont>
       <NavItem>
