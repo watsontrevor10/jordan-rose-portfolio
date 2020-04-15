@@ -3,7 +3,10 @@ import styled, { keyframes } from "styled-components"
 export const MainCont = styled.div`
   margin: 0 auto;
   max-width: 960;
-  padding: 1rem 2rem 1.45rem;
+`
+
+export const SubCont = styled.div`
+  padding: 1.5rem 3.5rem 1.45rem;
 `
 
 export const HeadCont = styled.div`
@@ -20,11 +23,6 @@ export const HeadStick = styled.div`
   position: sticky;
 `
 
-const appear = keyframes`
- 0% {opacity: 0;}
-  100% {opacity: 1;}
-`
-
 export const HeadText = styled.div`
   position: absolute;
   width: 90%;
@@ -32,11 +30,37 @@ export const HeadText = styled.div`
   left: 6%;
   color: #fcfdfe;
   text-align: center;
-  /* animation:  2s linear;
-  animation-delay: 1s; */
 `
 
 export const NavItem = styled.h3`
   padding-right: 0.7em;
   position: sticky;
+`
+
+export const BannerCont = styled.div`
+  position: relative;
+`
+
+export const BannerTitle = styled.div`
+  position: absolute;
+  top: 2em;
+  left: 3em;
+  color: white;
+  z-index: 1;
+`
+
+export const BannerSubtitle = styled.div`
+  position: absolute;
+  top: 10em;
+  left: 18%;
+  color: white;
+  width: 60%;
+  text-align: center;
+  z-index: 1;
+`
+
+export const BannerImgCont = styled.div`
+  margin: 0 1.4em 1em 0;
+  box-shadow: 1px 3px 3px black;
+  margin: auto;
 `

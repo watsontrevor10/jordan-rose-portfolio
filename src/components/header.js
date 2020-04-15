@@ -10,11 +10,7 @@ import HeroImg from "../components/heroImg"
 import { HeadCont, NavItem, HeadText } from "../styles/mainStyles"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      marginBottom: `1.45rem`,
-    }}
-  >
+  <header>
     {/* Navbar */}
     <HeadCont>
       <NavItem>
@@ -47,7 +43,6 @@ const Header = ({ siteTitle }) => (
         >
           <StyleLink to="/">{siteTitle}</StyleLink>
         </h1>
-        {/* <h3>New York City Drummer</h3> */}
       </HeadText>
     </div>
     {/* Nav Bar */}

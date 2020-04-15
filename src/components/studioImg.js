@@ -1,12 +1,11 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-// import styled from "styled-components"
 import Img from "gatsby-image"
 
-const HeroImg = () => {
+const TkLive = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "jordan-hero-wide.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "studio.jpg" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 1000) {
             ...GatsbyImageSharpFluid
@@ -20,14 +19,14 @@ const HeroImg = () => {
 
   return (
     <div>
-      <div style={{ position: "relative", marginBottom: "0" }}>
+      <div style={{ position: "relative" }}>
         <Img
           fluid={data.placeholderImage.childImageSharp.fluid}
-          alt="Jordan Rose Drums"
+          alt="Jordan Rose in the Studio"
         />
       </div>
     </div>
   )
 }
 
-export default HeroImg
+export default TkLive

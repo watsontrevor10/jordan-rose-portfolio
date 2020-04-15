@@ -2,10 +2,10 @@ import React from "react"
 import styled from "styled-components"
 
 // Styles
-import {} from "../styles/mainStyles"
+import { SubCont } from "../styles/mainStyles"
 
 const Contact = () => (
-  <div id="contact">
+  <SubCont id="contact" style={{ backgroundColor: "#924431" }}>
     <h1>Contact Me</h1>
     <Container>
       <TextCont>
@@ -25,15 +25,15 @@ const Contact = () => (
               flexDirection: "column",
             }}
           >
-            <FormBox type="text" name="name" placeholder="Name" />
-            <FormBox type="text" name="email" placeholder="Email" />
-            <TextArea name="message" placeholder="Message" />
+            <FormBox type="text" name="name" placeholder="Name" required />
+            <FormBox type="text" name="email" placeholder="Email" required />
+            <TextArea name="message" placeholder="Message" required />
             <Submit type="submit" value="Submit" />
           </div>
         </form>
       </FormCont>
     </Container>
-  </div>
+  </SubCont>
 )
 
 const Container = styled.div`
