@@ -1,6 +1,5 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import PropTypes from "prop-types"
 import styled from "styled-components"
 
 // Images
@@ -10,28 +9,23 @@ import HeroImg from "../components/heroImg"
 import { HeadCont, NavItem, HeadText } from "../styles/mainStyles"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      // marginBottom: `2rem`,
-      // backgroundColor: "#83aea7",
-    }}
-  >
+  <header>
     {/* Navbar */}
     <HeadCont>
       <NavItem>
-        <StyleLink to="/">Home</StyleLink>
+        <StyleLink href="/">Home</StyleLink>
       </NavItem>
       <NavItem>
-        <StyleLink to="#about">About</StyleLink>
+        <StyleLink href="#about">About</StyleLink>
       </NavItem>
       <NavItem>
-        <StyleLink to="#live">Work</StyleLink>
+        <StyleLink href="#live">Work</StyleLink>
       </NavItem>
       <NavItem>
-        <StyleLink to="#studio">Studio</StyleLink>
+        <StyleLink href="#studio">Studio</StyleLink>
       </NavItem>
       <NavItem>
-        <StyleLink to="#contact">Contact</StyleLink>
+        <StyleLink href="#contact">Contact</StyleLink>
       </NavItem>
     </HeadCont>
     {/* Hero Image with overlay text */}
@@ -62,7 +56,7 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
-const StyleLink = styled(Link)`
+const StyleLink = styled.a`
   color: #fcfdfe;
   text-decoration: none;
 `

@@ -25,11 +25,7 @@ const Insta = () => {
       {instaData.map(insta => (
         <div>
           <p>{insta.id}</p>
-          {/* <iframe
-            width="400"
-            src={"https://www.instagram.com/p/" + insta.id}
-            controls
-          ></iframe> */}
+          
         </div>
       ))}
       <video

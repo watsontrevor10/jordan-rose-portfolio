@@ -1,12 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-import Insta from "../components/instaAPI"
 
 // Images
 import TkImg from "../components/tkLiveImg"
-import CoryImg from "../components/coryConcert"
-import TkDrums from "../components/tkDrumImg"
-import TkLive from "../components/tkConcert"
 
 // Styles
 import {
@@ -25,9 +21,6 @@ const Work = () => (
       <BannerImgCont>
         <TkImg />
       </BannerImgCont>
-      {/* <BannerSubtitle>
-        <h3>Drummer for live and studio sessions</h3>
-      </BannerSubtitle> */}
     </BannerCont>
     <SubCont style={{  }}>
       <p style={{  }}>
@@ -35,36 +28,40 @@ const Work = () => (
       </p>
       <FlexCont>
         <iframe
+        title="Hard Work / Break Up Together by Theo Katzman"
           width="450"
           height="250px"
           src="https://www.youtube.com/embed/3qcjptTunXQ"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          frameBorder="0"
+          // allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
         ></iframe>
         <iframe
+          title="Pusher Lover / Case of You by Justin Timberlake and Joni Mitchell performed by Lohai"
           width="450"
           height="250"
           src="https://www.youtube.com/embed/n1knAEiVv0s"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          frameBorder="0"
+          // allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          // allowFullScreen
         ></iframe>
         <iframe
+          title="A Minute of Your Love by Caleb Hawley"
           width="450"
           height="250"
           src="https://www.youtube.com/embed/IFzx8SYzj7Q"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          frameBorder="0"
+          // allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
         ></iframe>
         <iframe
+          title="'91 Maxima Live by Cory Wong"
           width="450"
           height="250"
           src="https://www.youtube.com/embed/kWbQR_k1IFA"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          frameBorder="0"
+          // allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
         ></iframe>
       </FlexCont>
     </SubCont>
@@ -75,7 +72,7 @@ const FlexCont = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: 1em;
 `
 

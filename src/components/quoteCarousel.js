@@ -68,8 +68,8 @@ const MainCont = styled.div`
 `
 
 const QuoteCont = styled.div`
-  max-width: 700px;
-  height: 15em;
+  max-width: 1000px;
+  height: 12em;
   margin: auto auto 2em auto;
   overflow: auto;
   text-align: center;
@@ -77,8 +77,8 @@ const QuoteCont = styled.div`
   border-style: solid 1px grey;
   border-radius: 18px;
   box-shadow: 1px 3px 3px black;
-  background-color: #924431;
-  color: #e8d2c7;
+  background-color: #2f6c68;
+  color: #f3e2c9;
 `
 
 const Quote = styled.p`

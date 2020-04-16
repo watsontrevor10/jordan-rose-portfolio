@@ -24,16 +24,15 @@ const Studio = () => (
         <h3>Studio Recording</h3>
       </BannerSubtitle> */}
     </BannerCont>
-    <SubCont >
-      <div style={{ }}>
+    <SubCont>
+      <div style={{}}>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Jordan has a fully-equipped recording studio. He frequently records
+          drum tracks from him home for professional recordings. This allows
+          independent musicians to get quality drum tracks without having to pay
+          for recording studio time through a professional studio, and it also
+          allows artists to get quality drums tracks produced from anywhere the
+          in world.
         </p>
       </div>
     </SubCont>
