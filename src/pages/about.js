@@ -38,8 +38,8 @@ const About = () => {
             </p>
           </div>
         </div>
-        <QuoteCarousel />
       </SubCont>
+      {/* <QuoteCarousel /> */}
     </div>
   )
 }

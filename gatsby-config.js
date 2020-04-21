@@ -42,12 +42,6 @@ module.exports = {
         username: `jrosedrums`,
       },
     },
-    {
-      resolve: `gatsby-source-instagram-all`,
-      options: {
-        access_token: "YOUR_ACCESS_TOKEN",
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

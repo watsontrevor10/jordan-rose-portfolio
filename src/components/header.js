@@ -13,19 +13,19 @@ const Header = ({ siteTitle }) => (
     {/* Navbar */}
     <HeadCont>
       <NavItem>
-        <StyleLink href="/">Home</StyleLink>
+        <StyleLink href="/">HOME</StyleLink>
       </NavItem>
       <NavItem>
-        <StyleLink href="#about">About</StyleLink>
+        <StyleLink href="#about">ABOUT</StyleLink>
       </NavItem>
       <NavItem>
-        <StyleLink href="#live">Work</StyleLink>
+        <StyleLink href="#live">PERFORMANCE</StyleLink>
       </NavItem>
       <NavItem>
-        <StyleLink href="#studio">Studio</StyleLink>
+        <StyleLink href="#studio">STUDIO</StyleLink>
       </NavItem>
       <NavItem>
-        <StyleLink href="#contact">Contact</StyleLink>
+        <StyleLink href="#contact">CONTACT</StyleLink>
       </NavItem>
     </HeadCont>
     {/* Hero Image with overlay text */}
