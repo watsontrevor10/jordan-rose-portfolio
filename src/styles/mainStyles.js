@@ -1,6 +1,7 @@
 import styled, { keyframes } from "styled-components"
 
 export const MainCont = styled.div`
+  font-family: "covik-sans", sans-serif;
   margin: 0 auto;
   max-width: 960;
 `
