@@ -27,7 +27,9 @@ const Work = () => (
         A brief description of Jordan's performance schedule and some highlights
         of his career.
       </p>
+      {/* Embedded performance videos */}
       <FlexCont>
+        {/* Theo Katzman - Hard Work */}
         <iframe
           title="Hard Work / Break Up Together by Theo Katzman"
           width="450"

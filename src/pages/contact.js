@@ -70,7 +70,7 @@ const Submit = styled.input`
   margin: 5px;
   width: 50%;
   align-self: center;
-  background-color: #2f6c68;
+  background-color: black;
   color: #ffffff;
 `
 
