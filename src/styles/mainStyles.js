@@ -64,7 +64,7 @@ export const BannerImgCont = styled.div`
   margin: 0 1.4em 1em 0;
   box-shadow: 1px 3px 3px black;
   margin: auto;
-  opacity: .8;
+  /* opacity: .8; */
 `
 
 export const FlexCont = styled.div`

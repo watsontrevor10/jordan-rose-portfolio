@@ -16,7 +16,7 @@ import {
 const About = () => {
   return (
     <div>
-      <BannerCont>
+      <BannerCont id="about">
         <BannerTitle>
           <h1>About</h1>
         </BannerTitle>
@@ -24,7 +24,7 @@ const About = () => {
           <TkDrum />
         </BannerImgCont>
       </BannerCont>
-      <SubCont id="about">
+      <SubCont >
         <div>
           <div>
             <p>
