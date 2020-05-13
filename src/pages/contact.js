@@ -53,13 +53,13 @@ const FormCont = styled.div`
 `
 
 const FormBox = styled.input`
-  border-radius: 18px;
+  border-radius: 8px;
   padding: 10px;
   margin: 5px;
 `
 
 const TextArea = styled.textarea`
-  border-radius: 18px;
+  border-radius: 8px;
   padding: 10px;
   margin: 5px;
 `
