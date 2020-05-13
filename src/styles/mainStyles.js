@@ -66,3 +66,13 @@ export const BannerImgCont = styled.div`
   margin: auto;
   opacity: .8;
 `
+
+export const FlexCont = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 1em;
+  row-gap: 1em;
+  column-gap: 1em;
+`
