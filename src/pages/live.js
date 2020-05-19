@@ -12,6 +12,7 @@ import {
   BannerImgCont,
   BannerCont,
   FlexCont,
+  SubHeader,
 } from "../styles/mainStyles"
 
 const Work = () => {

@@ -10,10 +10,10 @@ const Contact = () => (
     <Container>
       <TextCont>
         <ul>
-          <li>Studio Recording</li>
-          <li>Live performance</li>
-          <li>Drum Lessons</li>
           <li>Remote Recording</li>
+          <li>Studio Recording</li>
+          <li>Live Performance</li>
+          <li>Drum Lessons</li>
           <li>Drum Questions</li>
         </ul>
       </TextCont>

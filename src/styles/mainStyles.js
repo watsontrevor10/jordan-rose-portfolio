@@ -10,8 +10,13 @@ export const SubCont = styled.div`
   padding: 1.5rem 3.5rem 1.45rem;
 `
 
+export const SubHeader = styled.h1`
+  text-align: center;
+`
+
 export const HeadCont = styled.div`
-  position: absolute;
+  position: sticky;
+  background-color: black;
   display: flex;
   flex-direction: row;
   max-width: 100%;

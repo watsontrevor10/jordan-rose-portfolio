@@ -1,11 +1,19 @@
 import React from "react"
-import { FlexCont } from "../styles/mainStyles"
+import { FlexCont, SubHeader } from "../styles/mainStyles"
 
 const Videos = () => {
   return (
     <div>
-      <h1 style={{ textAlign: "center"}}>Videos</h1>
+      <SubHeader>Videos</SubHeader>
       <FlexCont>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/videoseries?list=PLkxnkn06T7ykxeIx3ImlgsQqcHbxlbs4e"
+          frameborder="0"
+          // allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          // allowfullscreen
+        ></iframe>
         {/* Theo Katzman - Hard Work */}
         <iframe
           title="Hard Work / Break Up Together by Theo Katzman"

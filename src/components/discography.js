@@ -1,12 +1,12 @@
 import React from "react"
 
-import { FlexCont } from "../styles/mainStyles"
+import { FlexCont, SubHeader } from "../styles/mainStyles"
 
 const Discography = () => {
   const image_width = "200px"
   return (
     <div>
-      <h1 style={{ textAlign: "center"}}>Discography</h1>
+      <SubHeader>Discography</SubHeader>
       <FlexCont>
         {/* Theo Katzman - Modern Johnny */}
         <img
@@ -33,6 +33,7 @@ const Discography = () => {
           width={image_width}
           src="https://f4.bcbits.com/img/a2280449027_10.jpg"
         />
+        {/* Caleb Hawley - Sad People */}
         <img
           width={image_width}
           src="https://f4.bcbits.com/img/a0573669237_10.jpg"
