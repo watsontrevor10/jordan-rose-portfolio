@@ -4,6 +4,7 @@ import styled from "styled-components"
 // Components
 import QuoteCarousel from "../components/quoteCarousel"
 import TkDrum from "../components/tkDrumImg"
+import Press from "../components/press"
 
 // Styles
 import {
@@ -11,12 +12,14 @@ import {
   BannerImgCont,
   BannerCont,
   BannerTitle,
+  SubHeader,
 } from "../styles/mainStyles"
 
 const About = () => {
+ 
   return (
     <div>
-      <BannerCont>
+      <BannerCont id="about">
         <BannerTitle>
           <h1>About</h1>
         </BannerTitle>
@@ -24,7 +27,7 @@ const About = () => {
           <TkDrum />
         </BannerImgCont>
       </BannerCont>
-      <SubCont id="about">
+      <SubCont >
         <div>
           <div>
             <p>
@@ -37,6 +40,9 @@ const About = () => {
               Caleb Hawley.
             </p>
           </div>
+        </div>
+        <div>
+          <Press />
         </div>
       </SubCont>
       {/* <QuoteCarousel /> */}

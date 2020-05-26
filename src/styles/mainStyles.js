@@ -10,8 +10,13 @@ export const SubCont = styled.div`
   padding: 1.5rem 3.5rem 1.45rem;
 `
 
+export const SubHeader = styled.h1`
+  text-align: center;
+`
+
 export const HeadCont = styled.div`
-  position: absolute;
+  position: sticky;
+  background-color: black;
   display: flex;
   flex-direction: row;
   max-width: 100%;
@@ -64,5 +69,15 @@ export const BannerImgCont = styled.div`
   margin: 0 1.4em 1em 0;
   box-shadow: 1px 3px 3px black;
   margin: auto;
-  opacity: .8;
+  /* opacity: .8; */
+`
+
+export const FlexCont = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 1em;
+  row-gap: 1em;
+  column-gap: 1em;
 `

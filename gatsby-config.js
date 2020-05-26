@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Jordan Rose Drums`,
+    title: `JORDAN JACKSON ROSE`,
     description: `Jordan Rose, New York City drummer.`,
     author: `Trevor Watson`,
   },
