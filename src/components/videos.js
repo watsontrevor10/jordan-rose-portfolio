@@ -54,7 +54,6 @@ const Videos = () => {
             src={vid.src}
             frameBorder="0"
           >
-
           </iframe>
         ))}
       </FlexCont>
