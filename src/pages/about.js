@@ -1,8 +1,6 @@
 import React from "react"
-import styled from "styled-components"
 
 // Components
-import QuoteCarousel from "../components/quoteCarousel"
 import TkDrum from "../components/tkDrumImg"
 import Press from "../components/press"
 
@@ -12,7 +10,6 @@ import {
   BannerImgCont,
   BannerCont,
   BannerTitle,
-  SubHeader,
 } from "../styles/mainStyles"
 
 const About = () => {

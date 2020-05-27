@@ -16,35 +16,30 @@ export const SubHeader = styled.h1`
 `
 
 export const HeadCont = styled.div`
-  /* position: sticky;
-  position: -webkit-sticky; */
+  position: fixed;
+  /* position: -webkit-sticky; */
   background-color: black;
   display: flex;
   flex-direction: row;
   max-width: 100%;
   top: 0;
-  left: 1em;
-  z-index: 1;
-`
-
-export const HeadStick = styled.header`
-  overflow: hidden;
-  position: sticky;
-  position: -webkit-sticky;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 1em 0 0 1em;
 `
 
 export const HeadText = styled.div`
   position: absolute;
   width: 90%;
-  top: 30%;
-  left: 6%;
+  top: 10%;
+  left: 4%;
   color: white;
   text-align: center;
 `
 
-export const NavItem = styled.h3`
-  padding-right: 0.7em;
-  position: sticky;
+export const NavItem = styled.h4`
+  padding: 0 .4em 0 .4em;
 `
 
 export const BannerCont = styled.div`
@@ -84,4 +79,9 @@ export const FlexCont = styled.div`
   margin: 1.3em 1em 1.3em 1em;
   row-gap: 1em;
   column-gap: 1em;
+`
+
+const StyleLink = styled.a`
+  color: #fcfdfe;
+  text-decoration: none;
 `

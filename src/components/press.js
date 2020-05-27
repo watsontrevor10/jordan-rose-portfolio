@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { FlexCont, SubHeader } from "../styles/mainStyles"
+import { FlexCont, SubHeader, StyleLink } from "../styles/mainStyles"
 
 const Press = () => {
   //   const data = useStaticQuery(graphql`
@@ -31,7 +31,7 @@ const Press = () => {
     {
       article:
         "https://www.discussionsinpercussion.com/home/2020/4/1/170-jordan-rose-drummer-for-theo-katzman-cory-wong-caleb-hawley-amp-more",
-      img_url: "",
+      img_url: "Discussions in Percussion Podcast",
     },
   ]
 
@@ -48,6 +48,15 @@ const Press = () => {
           <a href={press_articles[1].article}>
             <img src={press_articles[1].img_url} />
           </a>
+        </ImgCont>
+        <ImgCont>
+          <div style={{ border: "2px solid black", padding: ".3em"}}>
+            <a href={press_articles[2].article} style={{ textDecoration: "none", color: "black" }}>
+              <h3 style={{ margin: "auto", textAlign: "center", textDecoration: "none" }}>
+                {press_articles[2].img_url}
+              </h3>
+            </a>
+          </div>
         </ImgCont>
       </FlexCont>
     </div>
