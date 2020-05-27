@@ -12,21 +12,25 @@ export const SubCont = styled.div`
 
 export const SubHeader = styled.h1`
   text-align: center;
+  padding: .5em;
 `
 
 export const HeadCont = styled.div`
-  position: sticky;
+  /* position: sticky;
+  position: -webkit-sticky; */
   background-color: black;
   display: flex;
   flex-direction: row;
   max-width: 100%;
-  top: 1em;
+  top: 0;
   left: 1em;
   z-index: 1;
 `
 
-export const HeadStick = styled.div`
+export const HeadStick = styled.header`
+  overflow: hidden;
   position: sticky;
+  position: -webkit-sticky;
 `
 
 export const HeadText = styled.div`
@@ -77,7 +81,7 @@ export const FlexCont = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 1em;
+  margin: 1.3em 1em 1.3em 1em;
   row-gap: 1em;
   column-gap: 1em;
 `
