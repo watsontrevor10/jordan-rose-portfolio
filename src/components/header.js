@@ -6,46 +6,29 @@ import styled from "styled-components"
 import HeroImg from "../components/heroImg"
 
 // Styles
-import { HeadCont, NavItem, HeadText, HeadStick } from "../styles/mainStyles"
+import { HeadCont, NavItem, HeadStick } from "../styles/mainStyles"
 
 const Header = ({ siteTitle }) => (
-  <HeadStick>
-          <HeadCont>
-      {/* Navbar */}
-        <NavItem>
-          <StyleLink href="/">HOME</StyleLink>
-        </NavItem>
-        <NavItem>
-          <StyleLink href="#about">ABOUT</StyleLink>
-        </NavItem>
-        <NavItem>
-          <StyleLink href="#live">PERFORMANCE</StyleLink>
-        </NavItem>
-        <NavItem>
-          <StyleLink href="#studio">STUDIO</StyleLink>
-        </NavItem>
-        <NavItem>
-          <StyleLink href="#contact">CONTACT</StyleLink>
-        </NavItem>
-      </HeadCont>
-      {/* Hero Image with overlay text */}
-      <div style={{ position: "relative" }}>
-        <div>
-          <HeroImg />
-        </div>
-        {/* Overlay Text */}
-        <HeadText>
-          <h1
-            style={{
-              fontSize: "80px",
-            }}
-          >
-            <StyleLink to="/">{siteTitle}</StyleLink>
-          </h1>
-        </HeadText>
-      </div>
-    </HeadStick>
-
+  <header>
+    {/* Navbar */}
+    <HeadCont>
+      <NavItem>
+        <StyleLink href="/">HOME</StyleLink>
+      </NavItem>
+      <NavItem>
+        <StyleLink href="#about">ABOUT</StyleLink>
+      </NavItem>
+      <NavItem>
+        <StyleLink href="#live">PERFORMANCE</StyleLink>
+      </NavItem>
+      <NavItem>
+        <StyleLink href="#studio">STUDIO</StyleLink>
+      </NavItem>
+      <NavItem>
+        <StyleLink href="#contact">CONTACT</StyleLink>
+      </NavItem>
+    </HeadCont>   
+  </header>
 )
 
 Header.propTypes = {
