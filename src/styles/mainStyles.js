@@ -26,26 +26,20 @@ export const HeadCont = styled.div`
   left: 0;
   right: 0;
   z-index: 2;
-`
-
-export const HeadStick = styled.header`
-  overflow: hidden;
-  position: sticky;
-  position: -webkit-sticky;
+  padding: 1em 0 0 1em;
 `
 
 export const HeadText = styled.div`
   position: absolute;
   width: 90%;
-  top: 30%;
-  left: 6%;
+  top: 10%;
+  left: 4%;
   color: white;
   text-align: center;
 `
 
-export const NavItem = styled.h3`
-  padding: 1em .4em .1em .4em;
-  position: sticky;
+export const NavItem = styled.h4`
+  padding: 0 .4em 0 .4em;
 `
 
 export const BannerCont = styled.div`

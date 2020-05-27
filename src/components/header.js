@@ -2,11 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 
-// Images
-import HeroImg from "../components/heroImg"
-
 // Styles
-import { HeadCont, NavItem, HeadStick } from "../styles/mainStyles"
+import { HeadCont, NavItem } from "../styles/mainStyles"
 
 const Header = ({ siteTitle }) => (
   <header>

@@ -1,5 +1,4 @@
 import React from "react"
-import Link from "gatsby"
 import PropTypes from "prop-types"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -11,7 +10,7 @@ import Studio from "./studio"
 import Contact from "./contact"
 
 // Styles
-import { HeadText, StyleLink } from "../styles/mainStyles"
+import { HeadText, } from "../styles/mainStyles"
 // Images
 import HeroImg from "../components/heroImg"
 
@@ -21,7 +20,7 @@ const IndexPage = ({ siteTitle }) => (
       <SEO title="Jordan Rose Drums" />
     </div>
     {/* Hero Image with overlay text */}
-    <div style={{ position: "relative" }}>
+    <div>
       <div>
         <HeroImg />
       </div>
@@ -30,7 +29,7 @@ const IndexPage = ({ siteTitle }) => (
     <HeadText>
       <h1
         style={{
-          fontSize: "80px",
+          fontSize: "60px",
         }}
       >
         JORDAN JACKSON ROSE
