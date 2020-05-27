@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components"
+import styled, {  } from "styled-components"
 
 export const MainCont = styled.div`
   font-family: "covik-sans", sans-serif;
@@ -81,7 +81,7 @@ export const FlexCont = styled.div`
   column-gap: 1em;
 `
 
-const StyleLink = styled.a`
+export const StyleLink = styled.a`
   color: #fcfdfe;
   text-decoration: none;
 `

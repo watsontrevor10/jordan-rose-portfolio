@@ -84,6 +84,7 @@ const Discography = () => {
             <img 
               width={image_width}
               src={disc.image}
+              alt={disc.albumName}
             />
           </a>
         ))}
