@@ -62,10 +62,6 @@ const Work = () => {
         </BannerImgCont>
       </BannerCont>
       <SubCont style={{}}>
-        {/* <p style={{}}>
-          A brief description of Jordan's performance schedule and some
-          highlights of his career.
-        </p> */}
         {/* Embedded performance videos */}
         <Videos />
         <Discography />
