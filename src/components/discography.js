@@ -5,6 +5,7 @@ import { FlexCont, SubHeader } from "../styles/mainStyles"
 const Discography = () => {
   const image_width = "300px"
 
+  // List of all albums
   const discography = [
     {
       id: 1,
