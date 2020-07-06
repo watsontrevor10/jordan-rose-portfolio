@@ -49,7 +49,7 @@ const Press = () => {
           <div style={{ border: "2px solid black", padding: ".3em" }}>
             <a
               href={press_articles[2].article}
-              style={{ textDecoration: "none", color: "black" }}
+              style={{ textDecoration: "none", color: "inherit" }}
             >
               <h3
                 style={{

@@ -17,10 +17,9 @@ export const SubHeader = styled.h1`
 
 export const HeadCont = styled.div`
   position: fixed;
-  /* position: -webkit-sticky; */
   background-color: black;
   display: flex;
-  flex-direction: row;
+  flex-direction: row;  
   max-width: 100%;
   top: 0;
   left: 0;
@@ -84,4 +83,19 @@ export const FlexCont = styled.div`
 export const StyleLink = styled.a`
   color: #fcfdfe;
   text-decoration: none;
+`
+
+export const LinkButton = styled.a`
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+`
+
+export const LinkBox = styled.div`
+  border: 2px solid black;
+  padding: .5em;
+  max-width: 10em;
+  height: 2em;
+  margin: auto;
+  margin-bottom: 3em;
 `

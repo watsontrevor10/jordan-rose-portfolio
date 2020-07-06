@@ -33,7 +33,7 @@ const About = () => {
             </p>
             <p>
               Jordan has performed with a variety of artists in many different
-              genres, toured with artists such as Theo Katzman, Cory Wong, and
+              genres, toured with artists such as Theo Katzman, Cory Wong, Lohai and
               Caleb Hawley.
             </p>
           </div>

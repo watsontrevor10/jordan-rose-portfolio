@@ -10,6 +10,8 @@ import {
   BannerTitle,
   BannerImgCont,
   BannerCont,
+  LinkButton,
+  LinkBox,
 } from "../styles/mainStyles"
 
 const Work = () => {
@@ -28,6 +30,15 @@ const Work = () => {
         <Videos />
         <Discography />
       </SubCont>
+      <LinkBox>
+        <LinkButton
+          href="https://open.spotify.com/playlist/4eiG5l1VyBeWMudhiC9VDW?si=2M-WFvPOQVK5FwLIHZsOQg"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h4 style={{ margin: "auto", position: "relative"}}>Listen to More . . .</h4>
+        </LinkButton>
+      </LinkBox>
     </div>
   )
 }
