@@ -91,6 +91,15 @@ export const LinkButton = styled.a`
   text-align: center;
 `
 
+export const DivButton = styled.div`
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  border: solid 1px black;
+  padding: 2px;
+  
+`
+
 export const LinkBox = styled.div`
   border: 2px solid black;
   padding: .5em;
@@ -98,4 +107,18 @@ export const LinkBox = styled.div`
   height: 2em;
   margin: auto;
   margin-bottom: 3em;
+`
+
+export const VidThumb = styled.div`
+  width: 8em;
+  position: relative;
+  cursor: pointer;
+`
+
+export const VidFlex = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
 `
