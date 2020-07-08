@@ -1,10 +1,6 @@
 import React, { useState } from "react"
 import ReactPlayer from "react-player"
-import {
-  VidFlex,
-  SubHeader,
-  VidThumb,
-} from "../styles/mainStyles"
+import { VidFlex, SubHeader, VidThumb } from "../styles/mainStyles"
 
 const Videos = () => {
   const videos = [
@@ -70,16 +66,18 @@ const Videos = () => {
           ))}
         </VidFlex>
         {/* Video player */}
-        <ReactPlayer
-          url={playVid}
-          config={{
-            youtube: {
-              playerVars: { showinfo: 1 },
-            },
-          }}
-          width="100%"
-          height="35em"
-        />
+        <div>
+          <ReactPlayer
+            url={playVid}
+            config={{
+              youtube: {
+                playerVars: { showinfo: 1 },
+              },
+            }}
+            width="100%"
+            height="35em"
+          />
+        </div>
       </div>
     </div>
   )
