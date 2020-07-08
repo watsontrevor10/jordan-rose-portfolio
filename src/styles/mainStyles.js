@@ -115,23 +115,10 @@ export const VidThumb = styled.div`
   cursor: pointer;
 `
 
-export const VidName = styled.div`
-  position: absolute;
-  top: 50%;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  border: solid 1px black;
-  padding: 2px;
-`
-
 export const VidFlex = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: auto;
   justify-content: center;
-  /* margin: 1.3em 1em 1.3em 1em;
-  row-gap: 1em;
-  column-gap: 1em; */
 `

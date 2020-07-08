@@ -3,8 +3,6 @@ import ReactPlayer from "react-player"
 import {
   VidFlex,
   SubHeader,
-  DivButton,
-  VidName,
   VidThumb,
 } from "../styles/mainStyles"
 
@@ -60,22 +58,18 @@ const Videos = () => {
   return (
     <div>
       <SubHeader>Videos</SubHeader>
-      {/* Video player */}
-      <div
-        // styles={{ display: "flex", margin: "auto", justifyContent: "center", alignItems: "center", width: "90%"}}
-      >
+      <div>
         <VidFlex>
           {/* video playlist selector */}
           {videos.map(vid => (
             <VidThumb>
-              <div
-                onClick={() => setPlayVid(vid.src)}
-              >
+              <div onClick={() => setPlayVid(vid.src)}>
                 <img src={vid.img} />
               </div>
             </VidThumb>
           ))}
         </VidFlex>
+        {/* Video player */}
         <ReactPlayer
           url={playVid}
           config={{
