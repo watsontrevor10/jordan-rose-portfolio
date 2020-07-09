@@ -68,15 +68,12 @@ const MainCont = styled.div`
 `
 
 const QuoteCont = styled.div`
-  /* max-width: 1000px; */
   height: 12em;
   margin: auto auto 2em auto;
   overflow: auto;
   text-align: center;
   padding: 1em;
   border-style: solid 1px grey;
-  /* border-radius: 18px; */
-  /* box-shadow: 1px 3px 3px black; */
   background-color: #924431;
   color: #cfc4b6;
 `

@@ -113,6 +113,11 @@ export const VidThumb = styled.div`
   width: 8em;
   position: relative;
   cursor: pointer;
+  transition: transform .3s;
+  :hover {
+    transform: scale(1.2)
+    
+  }
 `
 
 export const VidFlex = styled.div`

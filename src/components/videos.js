@@ -66,7 +66,7 @@ const Videos = () => {
           ))}
         </VidFlex>
         {/* Video player */}
-        <div>
+        <div style={{ margin: "auto", height: "35em" }}>
           <ReactPlayer
             url={playVid}
             config={{
@@ -75,7 +75,7 @@ const Videos = () => {
               },
             }}
             width="100%"
-            height="35em"
+            height="100%"
           />
         </div>
       </div>
