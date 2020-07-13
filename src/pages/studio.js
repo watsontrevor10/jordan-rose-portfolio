@@ -16,7 +16,7 @@ const Studio = () => (
   <div id="studio">
     <BannerCont>
       <BannerTitle>
-        <h1>Studio Recording</h1>
+        <h1>Studio</h1>
       </BannerTitle>
       <BannerImgCont>
         {/* Need to swap this out for another image when Jordan sends it */}

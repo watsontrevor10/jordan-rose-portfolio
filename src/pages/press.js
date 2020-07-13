@@ -2,6 +2,7 @@ import React from "react"
 
 // components
 import PressComp from "../components/press"
+import TkImg from "../components/tkLiveImg"
 
 // Styles
 import {BannerCont, BannerImgCont, BannerTitle } from "../styles/mainStyles"
@@ -14,7 +15,7 @@ const Press = () => {
           <h1>Press</h1>
         </BannerTitle>
         <BannerImgCont>
-          {/* <StudioImg /> */}
+          <TkImg />
         </BannerImgCont>
       </BannerCont>
       <PressComp />

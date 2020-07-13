@@ -11,7 +11,7 @@ import {
 } from "../styles/mainStyles"
 
 // Images
-import TkImg from "../components/tkLiveImg"
+import VidImg from "../components/vidsImage"
 
 // Components
 import Videos from "../components/videos"
@@ -24,7 +24,7 @@ const Vids = () => {
           <h1>Vids</h1>
         </BannerTitle>
         <BannerImgCont>
-          <TkImg />
+          <VidImg />
         </BannerImgCont>
       </BannerCont>
       <SubCont>
