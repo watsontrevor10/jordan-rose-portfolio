@@ -46,6 +46,13 @@ const Videos = () => {
       src: "https://www.youtube.com/embed/CCT7RRTRrdE",
       img: "https://img.youtube.com/vi/CCT7RRTRrdE/0.jpg",
     },
+    {
+      id: 7,
+      artist: "Pomplamoose",
+      title: "It's the End of the World as We Know It | Pomplamoose ft. dodie & Maddie Poppe",
+      src: "https://www.youtube.com/watch?v=fbyO9H7LSkQ",
+      img: "https://img.youtube.com/vi/fbyO9H7LSkQ/0.jpg"
+    }
   ]
 
   // state for video playlist selector
