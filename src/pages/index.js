@@ -15,6 +15,7 @@ import Contact from "./contact"
 import { HeadText } from "../styles/mainStyles"
 // Images
 import HeroImg from "../components/heroImg"
+import HeaderImg from "../images/Logo-Header-Clear.png"
 
 const IndexPage = ({ siteTitle }) => (
   <Layout>
@@ -24,11 +25,12 @@ const IndexPage = ({ siteTitle }) => (
     {/* Hero Image with overlay text */}
     <div id="home">
       <div>
-        <HeroImg />
+        {/* <HeroImg /> */}
+        <img src={HeaderImg} /> 
       </div>
       {/* Overlay Text */}
     </div>
-    <HeadText>
+    {/* <HeadText>
       <h1
         style={{
           fontSize: "60px",
@@ -36,7 +38,7 @@ const IndexPage = ({ siteTitle }) => (
       >
         JORDAN JACKSON ROSE
       </h1>
-    </HeadText>
+    </HeadText> */}
     <About />
     <Vids />
     <Studio />
