@@ -5,28 +5,37 @@ import styled from "styled-components"
 // Styles
 import { HeadCont, NavItem } from "../styles/mainStyles"
 
+// Image/Logo
+import JRLogo from "../images/jr-logo.png"
+console.log(JRLogo)
+
 const Header = ({ siteTitle }) => (
   <header>
     {/* Navbar */}
     <HeadCont>
-      <NavItem>
-        <StyleLink href="/">HOME</StyleLink>
-      </NavItem>
+      <div style={{ paddingRight: "12px" }}>
+        <StyleLink href="/">
+          <img src={JRLogo} alt="Jordan Rose Logo" style={{ width: "80px", zIndex: "1", }}/>
+        </StyleLink>
+      </div>
       <NavItem>
         <StyleLink href="#about">ABOUT</StyleLink>
       </NavItem>
       <NavItem>
-        <StyleLink href="#live">PERFORMANCE</StyleLink>
+        <StyleLink href="#vids">VIDS</StyleLink>
       </NavItem>
       <NavItem>
         <StyleLink href="#studio">STUDIO</StyleLink>
       </NavItem>
       <NavItem>
+        <StyleLink href="#disco">DISCOGRAPHY</StyleLink>
+      </NavItem>
+      <NavItem>
+        <StyleLink href="#press">PRESS</StyleLink>
+      </NavItem>
+      <NavItem>
         <StyleLink href="#contact">CONTACT</StyleLink>
       </NavItem>
-      {/* <NavItem style={{ }}>
-        <StyleLink href="/">JORDAN JACKSON ROSE</StyleLink>
-      </NavItem> */}
     </HeadCont> 
   </header>
 )

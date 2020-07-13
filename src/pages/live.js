@@ -1,8 +1,9 @@
 import React from "react"
 import Discography from "../components/discography"
 import Videos from "../components/videos"
+
 // Images
-import TkImg from "../components/tkLiveImg"
+import StudioImg from "../components/studioImg"
 
 // Styles
 import {
@@ -16,18 +17,16 @@ import {
 
 const Work = () => {
   return (
-    <div id="live">
+    <div id="disco">
       <BannerCont>
         <BannerTitle>
-          <h1>Performance</h1>
+          <h1>Discography</h1>
         </BannerTitle>
         <BannerImgCont>
-          <TkImg />
+          <StudioImg />
         </BannerImgCont>
       </BannerCont>
       <SubCont style={{}}>
-        {/* Embedded performance videos */}
-        <Videos />
         <Discography />
       </SubCont>
       <LinkBox>

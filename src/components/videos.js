@@ -60,7 +60,7 @@ const Videos = () => {
 
   return (
     <div>
-      <SubHeader>Videos</SubHeader>
+      {/* <SubHeader>Videos</SubHeader> */}
       <div>
         <VidFlex>
           {/* video playlist selector */}

@@ -2,7 +2,6 @@ import React from "react"
 
 // Components
 import TkDrum from "../components/tkDrumImg"
-import Press from "../components/press"
 
 // Styles
 import {
@@ -59,11 +58,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div>
-          <Press />
-        </div>
       </SubCont>
-      {/* <QuoteCarousel /> */}
     </div>
   )
 }

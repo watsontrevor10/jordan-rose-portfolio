@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { FlexCont, SubHeader } from "../styles/mainStyles"
+// import DiscussImg from "../images/discusspercuss.jpeg"
 
 const Press = () => {
   const press_articles = [
@@ -21,13 +22,13 @@ const Press = () => {
       title: "Jordan Rose - Drummer for Theo Katzman, Cory Wong, Caleb Hawley and More",
       article:
         "https://www.discussionsinpercussion.com/home/2020/4/1/170-jordan-rose-drummer-for-theo-katzman-cory-wong-caleb-hawley-amp-more",
-      img_url: "Discussions in Percussion Podcast",
+      img_url: "http://alumni.umassband.com/wp-content/uploads/discussions-in-percussion-400x225.png",
     },
   ]
 
   return (
     <div>
-      <SubHeader>Press</SubHeader>
+      {/* <SubHeader>Press</SubHeader> */}
       <FlexCont>
         <ImgCont>
           <a href={press_articles[0].article}>
@@ -46,22 +47,12 @@ const Press = () => {
           </a>
         </ImgCont>
         <ImgCont>
-          <div style={{ border: "2px solid black", padding: ".3em" }}>
             <a
               href={press_articles[2].article}
               style={{ textDecoration: "none", color: "inherit" }}
             >
-              <h3
-                style={{
-                  margin: "auto",
-                  textAlign: "center",
-                  textDecoration: "none",
-                }}
-              >
-                {press_articles[2].img_url}
-              </h3>
+              <img src={press_articles[2].img_url} alt={press_articles[2].title} />
             </a>
-          </div>
         </ImgCont>
       </FlexCont>
     </div>
