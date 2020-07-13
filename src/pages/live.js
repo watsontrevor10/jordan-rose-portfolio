@@ -36,7 +36,7 @@ const Work = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h4 style={{ margin: "auto", position: "relative"}}>Listen to More . . .</h4>
+          <h4 style={{ margin: "auto", position: "relative"}}>Hear More</h4>
         </LinkButton>
       </LinkBox>
     </div>
