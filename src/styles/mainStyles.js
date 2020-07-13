@@ -38,7 +38,7 @@ export const HeadText = styled.div`
 `
 
 export const NavItem = styled.h4`
-  padding: 0 .4em 0 .4em;
+  padding: .5em .4em 0 .6em;
 `
 
 export const BannerCont = styled.div`
