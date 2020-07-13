@@ -1,8 +1,9 @@
 import React from "react"
 import Discography from "../components/discography"
 import Videos from "../components/videos"
+
 // Images
-import TkImg from "../components/tkLiveImg"
+import StudioImg from "../components/studioImg"
 
 // Styles
 import {
@@ -22,7 +23,7 @@ const Work = () => {
           <h1>Discography</h1>
         </BannerTitle>
         <BannerImgCont>
-          <TkImg />
+          <StudioImg />
         </BannerImgCont>
       </BannerCont>
       <SubCont style={{}}>

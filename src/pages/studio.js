@@ -19,6 +19,7 @@ const Studio = () => (
         <h1>Studio Recording</h1>
       </BannerTitle>
       <BannerImgCont>
+        {/* Need to swap this out for another image when Jordan sends it */}
         <StudioImg />
       </BannerImgCont>
     </BannerCont>
