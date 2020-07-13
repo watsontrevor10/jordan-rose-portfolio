@@ -30,9 +30,6 @@ const Header = ({ siteTitle }) => (
       <NavItem>
         <StyleLink href="#contact">CONTACT</StyleLink>
       </NavItem>
-      {/* <NavItem style={{ }}>
-        <StyleLink href="/">JORDAN JACKSON ROSE</StyleLink>
-      </NavItem> */}
     </HeadCont> 
   </header>
 )

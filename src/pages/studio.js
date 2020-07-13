@@ -21,9 +21,6 @@ const Studio = () => (
       <BannerImgCont>
         <StudioImg />
       </BannerImgCont>
-      {/* <BannerSubtitle>
-        <h3>Studio Recording</h3>
-      </BannerSubtitle> */}
     </BannerCont>
     <SubCont>
       <div style={{}}>

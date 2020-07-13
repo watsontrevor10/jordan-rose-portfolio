@@ -26,8 +26,6 @@ const Work = () => {
         </BannerImgCont>
       </BannerCont>
       <SubCont style={{}}>
-        {/* Embedded performance videos */}
-        {/* <Videos /> */}
         <Discography />
       </SubCont>
       <LinkBox>
