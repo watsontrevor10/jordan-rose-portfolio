@@ -5,12 +5,14 @@ import SEO from "../components/seo"
 
 // Pages
 import About from "./about"
+import Vids from "./vids"
 import Live from "./live"
 import Studio from "./studio"
+import Press from "./press"
 import Contact from "./contact"
 
 // Styles
-import { HeadText, } from "../styles/mainStyles"
+import { HeadText } from "../styles/mainStyles"
 // Images
 import HeroImg from "../components/heroImg"
 
@@ -20,7 +22,7 @@ const IndexPage = ({ siteTitle }) => (
       <SEO title="Jordan Rose Drums" />
     </div>
     {/* Hero Image with overlay text */}
-    <div>
+    <div id="home">
       <div>
         <HeroImg />
       </div>
@@ -36,8 +38,10 @@ const IndexPage = ({ siteTitle }) => (
       </h1>
     </HeadText>
     <About />
-    <Live />
+    <Vids />
     <Studio />
+    <Live />
+    <Press />
     <Contact />
   </Layout>
 )

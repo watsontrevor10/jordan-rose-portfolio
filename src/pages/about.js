@@ -59,9 +59,9 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div>
+        {/* <div>
           <Press />
-        </div>
+        </div> */}
       </SubCont>
       {/* <QuoteCarousel /> */}
     </div>

@@ -16,10 +16,10 @@ import {
 
 const Work = () => {
   return (
-    <div id="live">
+    <div id="disco">
       <BannerCont>
         <BannerTitle>
-          <h1>Performance</h1>
+          <h1>Discography</h1>
         </BannerTitle>
         <BannerImgCont>
           <TkImg />
@@ -27,7 +27,7 @@ const Work = () => {
       </BannerCont>
       <SubCont style={{}}>
         {/* Embedded performance videos */}
-        <Videos />
+        {/* <Videos /> */}
         <Discography />
       </SubCont>
       <LinkBox>

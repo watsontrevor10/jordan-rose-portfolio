@@ -10,16 +10,22 @@ const Header = ({ siteTitle }) => (
     {/* Navbar */}
     <HeadCont>
       <NavItem>
-        <StyleLink href="/">HOME</StyleLink>
+        <StyleLink href="/">icon</StyleLink>
       </NavItem>
       <NavItem>
         <StyleLink href="#about">ABOUT</StyleLink>
       </NavItem>
       <NavItem>
-        <StyleLink href="#live">PERFORMANCE</StyleLink>
+        <StyleLink href="#vids">VIDS</StyleLink>
       </NavItem>
       <NavItem>
         <StyleLink href="#studio">STUDIO</StyleLink>
+      </NavItem>
+      <NavItem>
+        <StyleLink href="#disco">DISCOGRAPHY</StyleLink>
+      </NavItem>
+      <NavItem>
+        <StyleLink href="#press">PRESS</StyleLink>
       </NavItem>
       <NavItem>
         <StyleLink href="#contact">CONTACT</StyleLink>

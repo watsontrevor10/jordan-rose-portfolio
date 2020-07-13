@@ -82,7 +82,7 @@ const Discography = () => {
   
   return (
     <div>
-      <SubHeader>Discography</SubHeader>
+      {/* <SubHeader>Discography</SubHeader> */}
       <FlexCont>
         { discography.map(disc => (
           <a
