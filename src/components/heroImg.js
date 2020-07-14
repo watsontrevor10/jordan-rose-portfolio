@@ -19,10 +19,11 @@ const HeroImg = () => {
 
   return (
     <div>
-      <div style={{ position: "relative", marginBottom: "0" }}>
+      <div style={{ position: "relative", marginBottom: "0", paddingBottom: "0" }}>
         <Img
           fluid={data.placeholderImage.childImageSharp.fluid}
           alt="Jordan Rose Drums"
+          style={{ marginBottom: "0", paddingBottom: "0"}}
         />
       </div>
     </div>

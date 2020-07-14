@@ -24,7 +24,7 @@ const IndexPage = ({ siteTitle }) => (
     </div>
     {/* Hero Image with overlay text */}
     <div id="home">
-      <div style={{ opacity: ".3"}}>
+      <div style={{ opacity: ".3", }}>
         {/* <HeroImg /> */}
         <img src={HeaderImg} /> 
       </div>

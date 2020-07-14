@@ -13,7 +13,7 @@ const Header = ({ siteTitle }) => (
   <header>
     {/* Navbar */}
     <HeadCont>
-      <div style={{ paddingRight: "12px" }}>
+      <div style={{ padding: "0 10px 0 10px" }}>
         <StyleLink href="/">
           <img src={JRLogo} alt="Jordan Rose Logo" style={{ width: "80px", zIndex: "1", }}/>
         </StyleLink>

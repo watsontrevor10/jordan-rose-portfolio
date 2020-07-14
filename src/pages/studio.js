@@ -50,7 +50,7 @@ const Studio = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h4 style={{ margin: "auto", position: "relative"}}>Hear More</h4>
+          <h4>Hear More</h4>
         </LinkButton>
       </LinkBox>
       </div>

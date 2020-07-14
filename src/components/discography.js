@@ -91,7 +91,6 @@ const Discography = () => {
 
   return (
     <div>
-      {/* <SubHeader>Discography</SubHeader> */}
       <FlexCont>
         {discography.map(disc => (
           <a href={disc.albumLink} target="_blank" rel="noopener noreferrer">

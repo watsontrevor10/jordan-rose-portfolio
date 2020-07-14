@@ -25,7 +25,7 @@ export const HeadCont = styled.div`
   left: 0;
   right: 0;
   z-index: 2;
-  padding: 1em 0 0 1em;
+  padding: .5em 0 0 .5em;
 `
 
 export const HeadText = styled.div`
@@ -38,7 +38,7 @@ export const HeadText = styled.div`
 `
 
 export const NavItem = styled.h4`
-  padding: .5em .4em 0 .6em;
+  padding: .28em .4em 0 .6em;
 `
 
 export const BannerCont = styled.div`
@@ -102,8 +102,8 @@ export const DivButton = styled.div`
 
 export const LinkBox = styled.div`
   border: 2px solid black;
-  padding: .5em;
-  max-width: 10em;
+  padding: .3em;
+  max-width: 8em;
   height: 2em;
   margin: auto;
   margin-bottom: 3em;
@@ -112,11 +112,11 @@ export const LinkBox = styled.div`
 export const VidThumb = styled.div`
   width: 8em;
   position: relative;
+  margin-top: 1em;
   cursor: pointer;
   transition: transform .3s;
   :hover {
     transform: scale(1.2)
-    
   }
 `
 
