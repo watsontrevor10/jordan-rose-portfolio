@@ -93,7 +93,11 @@ const Discography = () => {
     <div>
       <FlexCont>
         {discography.map(disc => (
-          <a href={disc.albumLink} target="_blank" rel="noopener noreferrer">
+          <a
+            href={disc.albumLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img width={image_width} src={disc.image} alt={disc.albumName} />
           </a>
         ))}

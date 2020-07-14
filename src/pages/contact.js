@@ -66,9 +66,9 @@ const TextArea = styled.textarea`
 
 const Submit = styled.input`
   border-radius: 18px;
-  padding: 10px;
-  margin: 5px;
-  width: 50%;
+  padding: 8px;
+  margin: 7px;
+  width: 40%;
   align-self: center;
   background-color: black;
   color: #ffffff;
