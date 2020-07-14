@@ -7,7 +7,7 @@ export const MainCont = styled.div`
 `
 
 export const SubCont = styled.div`
-  padding: 1.5rem 3.5rem 1.45rem;
+  padding: 1.7rem 3.5rem 1.45rem;
 `
 
 export const SubHeader = styled.h1`

@@ -6,7 +6,7 @@ import { SubCont } from "../styles/mainStyles"
 
 const Contact = () => (
   <SubCont id="contact" style={{  }}>
-    <h1>Contact Me</h1>
+    <h1>CONTACT ME</h1>
     <Container>
       <TextCont>
         <ul>

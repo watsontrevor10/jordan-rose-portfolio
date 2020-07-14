@@ -16,7 +16,7 @@ const About = () => {
     <div>
       <BannerCont id="about">
         <BannerTitle>
-          <h1>About</h1>
+          <h1>ABOUT</h1>
         </BannerTitle>
         <BannerImgCont>
           <TkDrum />

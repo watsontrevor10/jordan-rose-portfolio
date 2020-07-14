@@ -20,7 +20,7 @@ const Work = () => {
     <div id="disco">
       <BannerCont>
         <BannerTitle>
-          <h1>Discography</h1>
+          <h1>DISCOGRAPHY</h1>
         </BannerTitle>
         <BannerImgCont>
           <StudioImg />

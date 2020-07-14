@@ -12,7 +12,7 @@ const Press = () => {
     <div id="press">
       <BannerCont>
         <BannerTitle>
-          <h1>Press</h1>
+          <h1>PRESS</h1>
         </BannerTitle>
         <BannerImgCont>
           <TkImg />

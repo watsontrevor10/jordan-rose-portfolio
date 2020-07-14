@@ -21,7 +21,7 @@ const Vids = () => {
     <div id="vids">
       <BannerCont>
         <BannerTitle>
-          <h1>Vids</h1>
+          <h1>VIDS</h1>
         </BannerTitle>
         <BannerImgCont>
           <VidImg />
