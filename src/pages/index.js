@@ -14,10 +14,9 @@ import Contact from "./contact"
 // Styles
 import { HeadText } from "../styles/mainStyles"
 // Images
-import HeroImg from "../components/heroImg"
 import HeaderImg from "../images/Logo-Header-Clear.png"
 
-const IndexPage = ({ siteTitle }) => (
+const IndexPage = () => (
   <Layout>
     <div>
       <SEO title="Jordan Rose Drums" />
@@ -26,7 +25,7 @@ const IndexPage = ({ siteTitle }) => (
     <div id="home">
       <div style={{ opacity: ".3", }}>
         {/* <HeroImg /> */}
-        <img src={HeaderImg} /> 
+        <img src={HeaderImg} alt="Jordan Rose Drums" /> 
       </div>
       {/* Overlay Text */}
     </div>

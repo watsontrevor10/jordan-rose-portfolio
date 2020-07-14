@@ -1,6 +1,5 @@
 import React from "react"
 import Discography from "../components/discography"
-import Videos from "../components/videos"
 
 // Images
 import StudioImg from "../components/studioImg"

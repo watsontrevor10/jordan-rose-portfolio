@@ -1,6 +1,6 @@
 import React from "react"
 
-import { FlexCont, SubHeader } from "../styles/mainStyles"
+import { FlexCont } from "../styles/mainStyles"
 
 const Discography = () => {
   const image_width = "300px"
@@ -46,7 +46,7 @@ const Discography = () => {
         "https://images.squarespace-cdn.com/content/v1/5b1b10f99772ae4f2afc279e/1583937818741-LF76F620V2ODHUK67E7Y/ke17ZwdGBToddI8pDm48kJHUEKwnHaQkrDLfLl_0zHZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmFF4sHvmgi8rFwPHCWctdpqxN_Nge5Tg7_qN1KdnjXjLF5WMyhObSUpmckcYl-HWR/CW_AlbumMock_01_Front.jpg",
     },
     {
-      id: 8,
+      id: 9,
       artist: "Cory Wong",
       albumName: "Live in the U.K.",
       albumLink:
@@ -97,6 +97,7 @@ const Discography = () => {
             href={disc.albumLink}
             target="_blank"
             rel="noopener noreferrer"
+            key={disc.id}
           >
             <img width={image_width} src={disc.image} alt={disc.albumName} />
           </a>

@@ -6,8 +6,6 @@ import {
   BannerTitle,
   BannerImgCont,
   BannerCont,
-  LinkButton,
-  LinkBox,
 } from "../styles/mainStyles"
 
 // Images

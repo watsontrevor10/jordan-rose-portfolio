@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import ReactPlayer from "react-player"
-import { VidFlex, SubHeader, VidThumb } from "../styles/mainStyles"
+import { VidFlex, VidThumb } from "../styles/mainStyles"
 
 const Videos = () => {
   const videos = [
@@ -65,9 +65,9 @@ const Videos = () => {
         <VidFlex>
           {/* video playlist selector */}
           {videos.map(vid => (
-            <VidThumb>
+            <VidThumb key={vid.id}>
               <div onClick={() => setPlayVid(vid.src)}>
-                <img src={vid.img} />
+                <img src={vid.img} alt={vid.title} />
               </div>
             </VidThumb>
           ))}
@@ -76,11 +76,11 @@ const Videos = () => {
         <div style={{ margin: "0 0 2em auto", height: "35em" }}>
           <ReactPlayer
             url={playVid}
-            config={{
-              youtube: {
-                playerVars: { showinfo: 1 },
-              },
-            }}
+            // config={{
+            //   youtube: {
+            //     playerVars: { showinfo: 1 },
+            //   },
+            // }}
             width="100%"
             height="100%"
           />

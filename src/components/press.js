@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { FlexCont, SubHeader } from "../styles/mainStyles"
+import { FlexCont } from "../styles/mainStyles"
 // import DiscussImg from "../images/discusspercuss.jpeg"
 
 const Press = () => {
