@@ -31,9 +31,9 @@ export const HeadCont = styled.div`
 export const HeadText = styled.div`
   position: absolute;
   width: 90%;
-  top: 10%;
+  top: 40%;
   left: 4%;
-  color: white;
+  color: black;
   text-align: center;
 `
 

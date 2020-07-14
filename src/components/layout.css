@@ -1,11 +1,32 @@
+@font-face {
+  font-family: "Gooper Black";
+  src: url("../fonts/Gooper0.2-Black.woff2")
+}
+
+@font-face {
+  font-family: "Gooper Bold";
+  src: url("../fonts/Gooper0.2-Bold.woff2")
+}
+
+@font-face {
+  font-family: "Gooper BoldItalic";
+  src: url("../fonts/Gooper0.2-BoldItalic.woff2")
+}
+
+@font-face {
+  font-family: "Gooper LightItalic";
+  src: url("../fonts/Gooper0.2-LightItalic.woff2")
+}
+
 html {
-  font-family: "covik-sans", sans-serif;
+  font-family: "Gooper LightItalic", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   background-color: #e9ebee;
 }
 body {
   margin: 0;
+  font-family: "Gooper LightItalic", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -64,7 +85,7 @@ dfn {
   font-style: italic;
 }
 h1 {
-  font: "covik-sans-bold";
+  font: "Gooper BoldItalic";
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -204,7 +225,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family:  "covik-sans", sans-serif;
+  font-family:  "Gooper LightItalic", sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -234,7 +255,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: "covik-sans", sans-serif;
+  font-family: "Gooper BoldItalic", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
@@ -250,7 +271,7 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: "covik-sans", sans-serif;
+  font-family: "Gooper BoldItalic", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
@@ -266,7 +287,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: "covik-sans", sans-serif;
+  font-family: "Gooper BoldItalic", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
@@ -282,7 +303,7 @@ h4 {
   padding-top: 0;
   margin-bottom: .75rem;
   color: inherit;
-  font-family: "covik-sans", sans-serif;
+  font-family: "Gooper BoldItalic", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -298,7 +319,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: "covik-sans", sans-serif;
+  font-family: "Gooper BoldItalic", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
@@ -314,7 +335,7 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: "covik-sans", sans-serif;
+  font-family: "Gooper BoldItalic", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;

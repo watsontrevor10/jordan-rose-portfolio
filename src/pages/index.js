@@ -24,13 +24,13 @@ const IndexPage = ({ siteTitle }) => (
     </div>
     {/* Hero Image with overlay text */}
     <div id="home">
-      <div>
+      <div style={{ opacity: ".3"}}>
         {/* <HeroImg /> */}
         <img src={HeaderImg} /> 
       </div>
       {/* Overlay Text */}
     </div>
-    {/* <HeadText>
+    <HeadText>
       <h1
         style={{
           fontSize: "60px",
@@ -38,7 +38,7 @@ const IndexPage = ({ siteTitle }) => (
       >
         JORDAN JACKSON ROSE
       </h1>
-    </HeadText> */}
+    </HeadText>
     <About />
     <Vids />
     <Studio />
