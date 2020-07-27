@@ -129,8 +129,8 @@ const Button = styled.button`
   transition: all 0.5s;
 
   :hover {
-    color: #343b3d;
-    transition: 0.2s;
+    color: #434c4f;
+    transition: 0.25s;
   }
 
   @media (min-width: 750px) {
@@ -144,8 +144,8 @@ const MenuItem = styled.h4`
   margin: 0 0 0 0.5em;
 
   :hover {
-    color: #343b3d;
-    transition: 0.2s;
+    color: #434c4f;
+    transition: 0.25s;
   }
 `
 

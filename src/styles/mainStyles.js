@@ -102,7 +102,6 @@ export const DivButton = styled.div`
   text-align: center;
   border: solid 1px black;
   padding: 2px;
-  
 `
 
 export const LinkBox = styled.div`
