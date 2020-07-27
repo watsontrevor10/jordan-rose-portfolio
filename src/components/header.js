@@ -15,32 +15,32 @@ const MobileMenu = props => {
     <MobileContainer>
       <MobileMenuItem onClick={() => props.setMenu()}>
         <StyleLink href="#about">
-          <h4>ABOUT</h4>
+          <MenuItem>ABOUT</MenuItem>
         </StyleLink>
       </MobileMenuItem>
       <MobileMenuItem onClick={() => props.setMenu()}>
         <StyleLink href="#vids">
-          <h4>VIDS</h4>
+          <MenuItem>VIDS</MenuItem>
         </StyleLink>
       </MobileMenuItem>
       <MobileMenuItem onClick={() => props.setMenu()}>
         <StyleLink href="#studio">
-          <h4>STUDIO</h4>
+          <MenuItem>STUDIO</MenuItem>
         </StyleLink>
       </MobileMenuItem>
       <MobileMenuItem onClick={() => props.setMenu()}>
         <StyleLink href="#disco">
-          <h4>DISCOGRAPHY</h4>
+          <MenuItem>DISCOGRAPHY</MenuItem>
         </StyleLink>
       </MobileMenuItem>
       <MobileMenuItem onClick={() => props.setMenu()}>
         <StyleLink href="#press">
-          <h4>PRESS</h4>
+          <MenuItem>PRESS</MenuItem>
         </StyleLink>
       </MobileMenuItem>
       <MobileMenuItem onClick={() => props.setMenu()}>
         <StyleLink href="#contact">
-          <h4>CONTACT</h4>
+          <MenuItem>CONTACT</MenuItem>
         </StyleLink>
       </MobileMenuItem>
     </MobileContainer>
@@ -72,22 +72,22 @@ const Header = ({ siteTitle }) => {
 
         <NavItem>
           <StyleLink href="#about">
-            <DeskMenuItem>ABOUT</DeskMenuItem>
+            <MenuItem>ABOUT</MenuItem>
           </StyleLink>
           <StyleLink href="#vids">
-            <DeskMenuItem>VIDS</DeskMenuItem>
+            <MenuItem>VIDS</MenuItem>
           </StyleLink>
           <StyleLink href="#studio">
-            <DeskMenuItem>STUDIO</DeskMenuItem>
+            <MenuItem>STUDIO</MenuItem>
           </StyleLink>
           <StyleLink href="#disco">
-            <DeskMenuItem>DISCOGRAPHY</DeskMenuItem>
+            <MenuItem>DISCOGRAPHY</MenuItem>
           </StyleLink>
           <StyleLink href="#press">
-            <DeskMenuItem>PRESS</DeskMenuItem>
+            <MenuItem>PRESS</MenuItem>
           </StyleLink>
           <StyleLink href="#contact">
-            <DeskMenuItem>CONTACT</DeskMenuItem>
+            <MenuItem>CONTACT</MenuItem>
           </StyleLink>
         </NavItem>
         <Button onClick={() => setMenu()}>
@@ -126,17 +126,27 @@ const Button = styled.button`
   outline: none;
   float: right;
   z-index: 2;
+  transition: all 0.5s;
+
+  :hover {
+    color: #343b3d;
+    transition: 0.2s;
+  }
 
   @media (min-width: 750px) {
     display: none;
   }
 `
 
-const DeskMenuItem = styled.h4`
+const MenuItem = styled.h4`
   color: #fcfdfe;
   text-decoration: none;
-  /* font-size: 18px; */
   margin: 0 0 0 0.5em;
+
+  :hover {
+    color: #343b3d;
+    transition: 0.2s;
+  }
 `
 
 const MobileContainer = styled.div`
@@ -146,6 +156,7 @@ const MobileContainer = styled.div`
   flex-direction: column;
   top: 0;
   left: 0;
+  padding-top: 2em;
   height: 100%;
   overflow-x: hidden;
   background-color: #151616;
