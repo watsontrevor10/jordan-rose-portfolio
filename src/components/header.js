@@ -150,6 +150,10 @@ const MobileContainer = styled.div`
   overflow-x: hidden;
   background-color: #151616;
   opacity: 0.97;
+
+  @media (min-width: 750px) {
+    display: none;
+  }
 `
 
 const MobileMenuItem = styled.button`
