@@ -30,15 +30,16 @@ export const HeadCont = styled.div`
 
 export const HeadText = styled.div`
   position: absolute;
-  width: 90%;
-  top: 40%;
-  left: 4%;
-  color: black;
+  top: 30%;
+  left: 14%;
   text-align: center;
+
 `
 
 export const NavItem = styled.ul`
   padding: .6em 0 0 0;
+  display: flex;
+  flex-direction: row;
 
   @media (max-width: 750px) {
     display: none;

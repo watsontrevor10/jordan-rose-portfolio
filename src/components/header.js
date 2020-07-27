@@ -14,22 +14,34 @@ const MobileMenu = props => {
   return (
     <MobileContainer>
       <MobileMenuItem onClick={() => props.setMenu()}>
-        <StyleLink href="#about">ABOUT</StyleLink>
+        <StyleLink href="#about">
+          <h4>ABOUT</h4>
+        </StyleLink>
       </MobileMenuItem>
       <MobileMenuItem onClick={() => props.setMenu()}>
-        <StyleLink href="#vids">VIDS</StyleLink>
+        <StyleLink href="#vids">
+          <h4>VIDS</h4>
+        </StyleLink>
       </MobileMenuItem>
       <MobileMenuItem onClick={() => props.setMenu()}>
-        <StyleLink href="#studio">STUDIO</StyleLink>
+        <StyleLink href="#studio">
+          <h4>STUDIO</h4>
+        </StyleLink>
       </MobileMenuItem>
       <MobileMenuItem onClick={() => props.setMenu()}>
-        <StyleLink href="#disco">DISCOGRAPHY</StyleLink>
+        <StyleLink href="#disco">
+          <h4>DISCOGRAPHY</h4>
+        </StyleLink>
       </MobileMenuItem>
       <MobileMenuItem onClick={() => props.setMenu()}>
-        <StyleLink href="#press">PRESS</StyleLink>
+        <StyleLink href="#press">
+          <h4>PRESS</h4>
+        </StyleLink>
       </MobileMenuItem>
       <MobileMenuItem onClick={() => props.setMenu()}>
-        <StyleLink href="#contact">CONTACT</StyleLink>
+        <StyleLink href="#contact">
+          <h4>CONTACT</h4>
+        </StyleLink>
       </MobileMenuItem>
     </MobileContainer>
   )
@@ -47,26 +59,36 @@ const Header = ({ siteTitle }) => {
       {/* Desktop Nav */}
       <HeadCont>
         {/* JR logo */}
-        <div>
-          <div style={{ padding: ".3em 5px .2em .3em" }}>
-            <StyleLink href="/">
-              <img
-                src={JRLogo}
-                alt="Jordan Rose Logo"
-                style={{ width: "80px", zIndex: "1" }}
-              />
-            </StyleLink>
-          </div>
+        <div style={{ padding: ".3em 5px .2em .3em", zIndex: "2" }}>
+          <StyleLink href="/">
+            <img
+              src={JRLogo}
+              alt="Jordan Rose Logo"
+              style={{ width: "80px", zIndex: "1" }}
+            />
+          </StyleLink>
         </div>
         {/* Nav items */}
 
         <NavItem>
-          <StyleLink href="#about">ABOUT</StyleLink>
-          <StyleLink href="#vids">VIDS</StyleLink>
-          <StyleLink href="#studio">STUDIO</StyleLink>
-          <StyleLink href="#disco">DISCOGRAPHY</StyleLink>
-          <StyleLink href="#press">PRESS</StyleLink>
-          <StyleLink href="#contact">CONTACT</StyleLink>
+          <StyleLink href="#about">
+            <DeskMenuItem>ABOUT</DeskMenuItem>
+          </StyleLink>
+          <StyleLink href="#vids">
+            <DeskMenuItem>VIDS</DeskMenuItem>
+          </StyleLink>
+          <StyleLink href="#studio">
+            <DeskMenuItem>STUDIO</DeskMenuItem>
+          </StyleLink>
+          <StyleLink href="#disco">
+            <DeskMenuItem>DISCOGRAPHY</DeskMenuItem>
+          </StyleLink>
+          <StyleLink href="#press">
+            <DeskMenuItem>PRESS</DeskMenuItem>
+          </StyleLink>
+          <StyleLink href="#contact">
+            <DeskMenuItem>CONTACT</DeskMenuItem>
+          </StyleLink>
         </NavItem>
         <Button onClick={() => setMenu()}>
           <FaBars></FaBars>
@@ -89,7 +111,6 @@ const StyleLink = styled.a`
   color: #fcfdfe;
   text-decoration: none;
   font-size: 18px;
-  margin: 2em 0 0 0.4em;
 `
 
 const Button = styled.button`
@@ -109,6 +130,13 @@ const Button = styled.button`
   @media (min-width: 750px) {
     display: none;
   }
+`
+
+const DeskMenuItem = styled.h4`
+  color: #fcfdfe;
+  text-decoration: none;
+  /* font-size: 18px; */
+  margin: 0 0 0 0.5em;
 `
 
 const MobileContainer = styled.div`

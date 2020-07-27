@@ -22,22 +22,24 @@ const IndexPage = () => (
       <SEO title="Jordan Rose Drums" />
     </div>
     {/* Hero Image with overlay text */}
-    <div id="home">
-      <div style={{ opacity: ".3", }}>
-        {/* <HeroImg /> */}
-        <img src={HeaderImg} alt="Jordan Rose Drums" /> 
+    <div>
+      <HeadText>
+        <h1
+          style={{
+            fontSize: "60px",
+          }}
+        >
+          JORDAN JACKSON ROSE
+        </h1>
+      </HeadText>
+      <div id="home">
+        <div style={{ opacity: ".3" }}>
+          {/* <HeroImg /> */}
+          <img src={HeaderImg} alt="Jordan Rose Drums" />
+        </div>
+        {/* Overlay Text */}
       </div>
-      {/* Overlay Text */}
     </div>
-    <HeadText>
-      <h1
-        style={{
-          fontSize: "60px",
-        }}
-      >
-        JORDAN JACKSON ROSE
-      </h1>
-    </HeadText>
     <About />
     <Vids />
     <Studio />
