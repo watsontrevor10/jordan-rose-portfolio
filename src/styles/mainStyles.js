@@ -37,8 +37,8 @@ export const HeadText = styled.div`
   text-align: center;
 `
 
-export const NavItem = styled.h4`
-  padding: .28em .4em 0 .6em;
+export const NavItem = styled.ul`
+  padding: .6em 0 0 0;
 `
 
 export const BannerCont = styled.div`
