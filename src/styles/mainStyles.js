@@ -39,6 +39,10 @@ export const HeadText = styled.div`
 
 export const NavItem = styled.ul`
   padding: .6em 0 0 0;
+
+  @media (max-width: 750px) {
+    display: none;
+  }
 `
 
 export const BannerCont = styled.div`
