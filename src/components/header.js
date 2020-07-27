@@ -1,110 +1,81 @@
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 
 // Styles
 import { HeadCont, NavItem } from "../styles/mainStyles"
-import {FaBars} from "react-icons/fa"
+import { FaBars } from "react-icons/fa"
 
 // Image/Logo
 import JRLogo from "../images/jr-logo.png"
 console.log(JRLogo)
 
-// const MobileNav = () => {
-//   return (
-//     <HeadCont>
-//       <div>
-//         <div style={{ padding: "0 10px 0 10px" }}>
-//           <StyleLink href="/">
-//             <img
-//               src={JRLogo}
-//               alt="Jordan Rose Logo"
-//               style={{ width: "80px", zIndex: "1" }}
-//             />
-//           </StyleLink>
-//         </div>
-//       </div>
-//       <div>
-//         {/* insert hambuger icon here */}
-//         hambuger
-//       </div>
-//       </HeadCont>
-//   )
-// }
-
-// const DesktopNav = () => {
-//   return (
-//     <header>
-//     {/* Desktop Nav */}
-//     <HeadCont>
-//       {/* JR logo */}
-//       <div>
-//         <div style={{ padding: "0 10px 0 10px" }}>
-//           <StyleLink href="/">
-//             <img
-//               src={JRLogo}
-//               alt="Jordan Rose Logo"
-//               style={{ width: "80px", zIndex: "1" }}
-//             />
-//           </StyleLink>
-//         </div>
-//       </div>
-//       {/* Nav items */}
-//       <NavItem>
-//         <StyleLink href="#about">ABOUT</StyleLink>
-//       </NavItem>
-//       <NavItem>
-//         <StyleLink href="#vids">VIDS</StyleLink>
-//       </NavItem>
-//       <NavItem>
-//         <StyleLink href="#studio">STUDIO</StyleLink>
-//       </NavItem>
-//       <NavItem>
-//         <StyleLink href="#disco">DISCOGRAPHY</StyleLink>
-//       </NavItem>
-//       <NavItem>
-//         <StyleLink href="#press">PRESS</StyleLink>
-//       </NavItem>
-//       <NavItem>
-//         <StyleLink href="#contact">CONTACT</StyleLink>
-//       </NavItem>
-//     </HeadCont>
-//   </header>
-//   )
-// }
-
-const Header = ({ siteTitle }) => (
-  <header>
-    {/* Desktop Nav */}
-    <HeadCont>
-      {/* JR logo */}
-      <div>
-        <div style={{ padding: ".3em 5px .2em .3em" }}>
-          <StyleLink href="/">
-            <img
-              src={JRLogo}
-              alt="Jordan Rose Logo"
-              style={{ width: "80px", zIndex: "1" }}
-            />
-          </StyleLink>
-        </div>
-      </div>
-      {/* Nav items */}
-
-      <NavItem>
+const MobileMenu = props => {
+  return (
+    <MobileContainer>
+      <MobileMenuItem onClick={() => props.setMenu()}>
         <StyleLink href="#about">ABOUT</StyleLink>
+      </MobileMenuItem>
+      <MobileMenuItem onClick={() => props.setMenu()}>
         <StyleLink href="#vids">VIDS</StyleLink>
+      </MobileMenuItem>
+      <MobileMenuItem onClick={() => props.setMenu()}>
         <StyleLink href="#studio">STUDIO</StyleLink>
+      </MobileMenuItem>
+      <MobileMenuItem onClick={() => props.setMenu()}>
         <StyleLink href="#disco">DISCOGRAPHY</StyleLink>
+      </MobileMenuItem>
+      <MobileMenuItem onClick={() => props.setMenu()}>
         <StyleLink href="#press">PRESS</StyleLink>
+      </MobileMenuItem>
+      <MobileMenuItem onClick={() => props.setMenu()}>
         <StyleLink href="#contact">CONTACT</StyleLink>
-      </NavItem>
-      <Button>
-        <FaBars></FaBars>
-      </Button>
-    </HeadCont>
-  </header>
-)
+      </MobileMenuItem>
+    </MobileContainer>
+  )
+}
+
+const Header = ({ siteTitle }) => {
+  const [toggleMenu, setToggleMenu] = useState(false)
+
+  const setMenu = () => {
+    setToggleMenu(!toggleMenu)
+  }
+
+  return (
+    <header>
+      {/* Desktop Nav */}
+      <HeadCont>
+        {/* JR logo */}
+        <div>
+          <div style={{ padding: ".3em 5px .2em .3em" }}>
+            <StyleLink href="/">
+              <img
+                src={JRLogo}
+                alt="Jordan Rose Logo"
+                style={{ width: "80px", zIndex: "1" }}
+              />
+            </StyleLink>
+          </div>
+        </div>
+        {/* Nav items */}
+
+        <NavItem>
+          <StyleLink href="#about">ABOUT</StyleLink>
+          <StyleLink href="#vids">VIDS</StyleLink>
+          <StyleLink href="#studio">STUDIO</StyleLink>
+          <StyleLink href="#disco">DISCOGRAPHY</StyleLink>
+          <StyleLink href="#press">PRESS</StyleLink>
+          <StyleLink href="#contact">CONTACT</StyleLink>
+        </NavItem>
+        <Button onClick={() => setMenu()}>
+          <FaBars></FaBars>
+        </Button>
+        {toggleMenu ? <MobileMenu setMenu={setMenu} /> : ""}
+      </HeadCont>
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
@@ -133,9 +104,32 @@ const Button = styled.button`
   cursor: pointer;
   outline: none;
   float: right;
+  z-index: 2;
 
   @media (min-width: 750px) {
     display: none;
   }
+`
+
+const MobileContainer = styled.div`
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #151616;
+  opacity: 0.97;
+`
+
+const MobileMenuItem = styled.button`
+  color: #fcfdfe;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 2em 0 0 0.4em;
+  background-color: transparent;
+  border: none;
 `
 export default Header
