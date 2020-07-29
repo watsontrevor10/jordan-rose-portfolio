@@ -51,7 +51,7 @@ const About = () => {
               currently reside in Brooklyn, NY with my beautiful wife, Jules.
             </p>
             <p>
-              Please shoot me a note in the contact form for inquires about drum
+              Please shoot me a note in the <a href="#contact">contact form</a> for inquires about drum
               recording sessions (remote or in studio), gigs, tours, lessons (in
               person or online), or just to say hello. I look forward to
               chatting!
