@@ -97,7 +97,7 @@ const Discography = () => {
             href={disc.albumLink}
             target="_blank"
             rel="noopener noreferrer"
-            key={disc.i}
+            key={disc.id}
           >
             <img width={image_width} src={disc.image} alt={disc.albumName} />
           </a>

@@ -115,6 +115,7 @@ export const LinkBox = styled.div`
 
 export const VidThumb = styled.div`
   width: 8em;
+  height: auto;
   position: relative;
   margin-top: 1em;
   cursor: pointer;
@@ -130,4 +131,26 @@ export const VidFlex = styled.div`
   flex-wrap: no-wrap;
   margin: auto;
   justify-content: center;
+`
+
+export const VideoContainer = styled.div`
+  margin: 0 0 2dm auto;
+  height: 35em;
+  width: 100%;
+
+  @media (max-width: 1200px) {
+    height: 30em;
+  }
+
+  @media (max-width: 1000px) {
+    height: 25em;
+  }
+
+  @media (max-width: 700px) {
+    height: 20em;
+  }
+
+  @media (max-width: 600px) {
+    height: 15em;
+  }
 `
