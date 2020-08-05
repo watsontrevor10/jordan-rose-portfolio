@@ -56,6 +56,11 @@ export const BannerTitle = styled.div`
   left: 3em;
   color: white;
   z-index: 1;
+
+  @media (max-width: 380px) {
+    top: 1em;
+    left: 0.5em;
+  }
 `
 
 export const BannerSubtitle = styled.div`
@@ -72,7 +77,6 @@ export const BannerImgCont = styled.div`
   margin: 0 1.4em 1em 0;
   box-shadow: 1px 3px 3px black;
   margin: auto;
-  /* opacity: .8; */
 `
 
 export const FlexCont = styled.div`
@@ -113,6 +117,7 @@ export const LinkBox = styled.div`
   margin-bottom: 3em;
 `
 
+// Video.js styles
 export const VidThumb = styled.div`
   width: 8em;
   height: auto;
@@ -153,4 +158,9 @@ export const VideoContainer = styled.div`
   @media (max-width: 600px) {
     height: 15em;
   }
+
+  @media (max-width: 500px) {
+    height: 10em;
+  }
+
 `

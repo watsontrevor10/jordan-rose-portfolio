@@ -141,7 +141,7 @@ const Button = styled.button`
 const MenuItem = styled.h4`
   color: #fcfdfe;
   text-decoration: none;
-  margin: 0 0 0 0.5em;
+  margin: 0 0 0 0.7em;
 
   :hover {
     color: #434c4f;
