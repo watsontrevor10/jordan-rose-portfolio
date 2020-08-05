@@ -1,5 +1,6 @@
 import React, { useState } from "react"
-import ReactPlayer from "react-player"
+// import ReactPlayer from "react-player"
+import styled from "styled-components"
 import { VidFlex, VidThumb } from "../styles/mainStyles"
 
 const Videos = () => {
@@ -66,12 +67,41 @@ const Videos = () => {
           ))}
         </VidFlex>
         {/* Video player, switches video to whatever is selected in playlist selector */}
-        <div style={{ margin: "0 0 2em auto", height: "35em" }}>
-          <ReactPlayer url={playVid} width="100%" height="100%" />
-        </div>
+        <VideoContainer>
+          <iframe
+            width="100%"
+            height="100%"
+            src={playVid}
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </VideoContainer>
       </div>
     </div>
   )
 }
+
+const VideoContainer = styled.div`
+  margin: 0 0 2dm auto;
+  height: 35em;
+  width: 100%;
+
+  @media (max-width: 1200px) {
+    height: 30em;
+  }
+
+  @media (max-width: 1000px) {
+    height: 25em;
+  }
+
+  @media (max-width: 700px) {
+    height: 20em;
+  }
+
+  @media (max-width: 600px) {
+    height: 15em;
+  }
+`
 
 export default Videos

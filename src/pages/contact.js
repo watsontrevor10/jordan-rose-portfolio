@@ -26,7 +26,7 @@ const Contact = () => (
             }}
           >
             <FormBox type="text" name="name" placeholder="Name" required />
-            <FormBox type="text" name="email" placeholder="Email" required />
+            <FormBox type="email" name="email" placeholder="Email" required />
             <TextArea name="message" placeholder="Message" required />
             <Submit type="submit" value="Submit" />
           </div>

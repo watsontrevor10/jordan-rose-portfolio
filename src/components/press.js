@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import { FlexCont } from "../styles/mainStyles"
-// import DiscussImg from "../images/discusspercuss.jpeg"
 
 const Press = () => {
   const press_articles = [

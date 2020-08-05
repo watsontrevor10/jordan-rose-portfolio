@@ -127,7 +127,7 @@ export const VidThumb = styled.div`
 export const VidFlex = styled.div`
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
   margin: auto;
   justify-content: center;
 `
