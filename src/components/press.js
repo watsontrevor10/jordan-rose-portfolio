@@ -28,30 +28,16 @@ const Press = () => {
   return (
     <div>
       <FlexCont>
-        <ImgCont>
-          <a href={press_articles[0].article}>
-            <img
-              src={press_articles[0].img_url}
-              alt={press_articles[0].title}
+        {press_articles.map(article => (
+          <ImgCont>
+          <a href={article.article} target="_blank" rel="noopener noreferrer">
+            <img 
+              src={article.img_url}
+              alt={article.title}
             />
           </a>
-        </ImgCont>
-        <ImgCont>
-          <a href={press_articles[1].article}>
-            <img
-              src={press_articles[1].img_url}
-              alt={press_articles[1].title}
-            />
-          </a>
-        </ImgCont>
-        <ImgCont>
-            <a
-              href={press_articles[2].article}
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              <img src={press_articles[2].img_url} alt={press_articles[2].title} />
-            </a>
-        </ImgCont>
+          </ImgCont>
+        ))}
       </FlexCont>
     </div>
   )

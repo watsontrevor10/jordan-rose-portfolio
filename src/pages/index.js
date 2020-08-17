@@ -19,13 +19,11 @@ const IndexPage = () => (
     <div>
       <SEO title="Jordan Rose Drums" />
     </div>
-    {/* Hero Image with overlay text */}
     <div>
       <div id="home">
         <div>
           <HeroImg />
         </div>
-        {/* Overlay Text */}
       </div>
     </div>
     <About />
