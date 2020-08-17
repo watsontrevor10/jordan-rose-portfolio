@@ -14,32 +14,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts-v2`,
-      options: {
-        fonts: [
-          {
-            family: "Roboto Slab",
-            variable: true,
-            weights: ["200..900"],
-          },
-          {
-            family: "Nanum Brush Script",
-            variable: true,
-            weights: ["200..900"],
-          },
-        ],
-      },
-    },
-    {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
-      },
-    },
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `jrosedrums`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -53,7 +30,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/jr-logo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
