@@ -29,7 +29,7 @@ const Press = () => {
     <div>
       <FlexCont>
         {press_articles.map(article => (
-          <ImgCont>
+          <ImgCont key={article.title}>
           <a href={article.article} target="_blank" rel="noopener noreferrer">
             <img 
               src={article.img_url}
