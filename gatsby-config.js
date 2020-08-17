@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `JORDAN JACKSON ROSE`,
-    description: `Jordan Rose, New York City drummer.`,
-    author: `Trevor Watson`,
+    description: `Jordan Rose, New York City Drummer.`,
+    author: `Trevor Watson, Watson Creative LLC.`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

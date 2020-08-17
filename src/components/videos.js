@@ -57,8 +57,8 @@ const Videos = () => {
         <VidFlex>
           {/* video playlist selector, uses YouTube thumbnails as images for gallery view */}
           {videos.map(vid => (
-            <VidThumb key={vid.i}>
-              <div onClick={() => setPlayVid(vid.src)}>
+            <VidThumb>
+              <div onClick={() => setPlayVid(vid.src)} key={vid.i}>
                 <img src={vid.img} alt={vid.title} />
               </div>
             </VidThumb>
@@ -72,7 +72,7 @@ const Videos = () => {
             height="100%"
             title="Video Player"
             frameborder="0"
-            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+            allow="fullscreen"
             allowfullscreen
           ></iframe>
         </VideoContainer>

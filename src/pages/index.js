@@ -11,10 +11,7 @@ import Studio from "./studio"
 import Press from "./press"
 import Contact from "./contact"
 
-// Styles
-import { HeadText } from "../styles/mainStyles"
 // Images
-import HeaderImg from "../components/heroImg"
 import HeroImg from "../components/heroImg"
 
 const IndexPage = () => (
@@ -24,15 +21,6 @@ const IndexPage = () => (
     </div>
     {/* Hero Image with overlay text */}
     <div>
-      {/* <HeadText>
-        <h1
-          style={{
-            fontSize: "60px",
-          }}
-        >
-          JORDAN JACKSON ROSE
-        </h1>
-      </HeadText> */}
       <div id="home">
         <div>
           <HeroImg />
