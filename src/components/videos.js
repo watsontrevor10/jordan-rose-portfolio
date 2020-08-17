@@ -68,8 +68,8 @@ const Videos = () => {
         <VideoContainer>
           <iframe
             width="100%"
-            height="100%"
             src={playVid}
+            height="100%"
             title="Video Player"
             frameborder="0"
             allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"

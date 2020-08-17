@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 // Pages
 import About from "./about"
 import Vids from "./vids"
-import Live from "./live"
+import Live from "./discography"
 import Studio from "./studio"
 import Press from "./press"
 import Contact from "./contact"
@@ -14,7 +14,8 @@ import Contact from "./contact"
 // Styles
 import { HeadText } from "../styles/mainStyles"
 // Images
-import HeaderImg from "../images/Logo-Header-Clear.png"
+import HeaderImg from "../components/heroImg"
+import HeroImg from "../components/heroImg"
 
 const IndexPage = () => (
   <Layout>
@@ -23,7 +24,7 @@ const IndexPage = () => (
     </div>
     {/* Hero Image with overlay text */}
     <div>
-      <HeadText>
+      {/* <HeadText>
         <h1
           style={{
             fontSize: "60px",
@@ -31,11 +32,10 @@ const IndexPage = () => (
         >
           JORDAN JACKSON ROSE
         </h1>
-      </HeadText>
+      </HeadText> */}
       <div id="home">
-        <div style={{ opacity: ".3" }}>
-          {/* <HeroImg /> */}
-          <img src={HeaderImg} alt="Jordan Rose Drums" />
+        <div>
+          <HeroImg />
         </div>
         {/* Overlay Text */}
       </div>

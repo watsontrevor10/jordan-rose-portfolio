@@ -2,7 +2,7 @@ import React from "react"
 
 // components
 import PressComp from "../components/press"
-import TkImg from "../components/tkLiveImg"
+import TkImg from "../components/pressImage"
 
 // Styles
 import {BannerCont, BannerImgCont, BannerTitle } from "../styles/mainStyles"

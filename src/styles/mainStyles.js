@@ -30,10 +30,9 @@ export const HeadCont = styled.div`
 
 export const HeadText = styled.div`
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 14%;
   text-align: center;
-
 `
 
 export const NavItem = styled.ul`
@@ -162,5 +161,4 @@ export const VideoContainer = styled.div`
   @media (max-width: 500px) {
     height: 10em;
   }
-
 `

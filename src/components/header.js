@@ -60,7 +60,7 @@ const Header = ({ siteTitle }) => {
       <HeadCont>
         {/* JR logo */}
         <div style={{ padding: ".3em 5px .2em .3em", zIndex: "2" }}>
-          <StyleLink href="/">
+          <StyleLink href="#home">
             <img
               src={JRLogo}
               alt="Jordan Rose Logo"
