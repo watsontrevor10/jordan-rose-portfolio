@@ -27,7 +27,6 @@ const Press = () => {
 
   return (
     <div>
-      {/* <SubHeader>Press</SubHeader> */}
       <FlexCont>
         <ImgCont>
           <a href={press_articles[0].article}>
