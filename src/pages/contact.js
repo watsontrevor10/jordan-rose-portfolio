@@ -5,7 +5,7 @@ import styled from "styled-components"
 import { SubCont } from "../styles/mainStyles"
 
 const Contact = () => (
-  <SubCont id="contact" style={{  }}>
+  <SubCont id="contact" style={{}}>
     <h1>CONTACT ME</h1>
     <Container>
       <TextCont>
@@ -18,16 +18,19 @@ const Contact = () => (
         </ul>
       </TextCont>
       <FormCont>
-        <form>
+        <form acceptCharset="UTF-8" action="" method="POST">
           <div
             style={{
               display: "flex",
               flexDirection: "column",
             }}
           >
-            <FormBox type="text" name="name" placeholder="Name" required />
-            <FormBox type="email" name="email" placeholder="Email" required />
-            <TextArea name="message" placeholder="Message" required />
+            <label for="name">Name</label>
+            <FormBox type="text" name="name" required />
+            <label for="email">Email</label>
+            <FormBox type="email" name="email" required />
+            <label for="message">Message</label>
+            <TextArea name="message" required />
             <Submit type="submit" value="Submit" />
           </div>
         </form>
@@ -37,9 +40,9 @@ const Contact = () => (
 )
 
 const Container = styled.div`
- display: flex;
- flex-direction: row;
- justify-content: stretch;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
 `
 
 const TextCont = styled.div`
@@ -48,7 +51,7 @@ const TextCont = styled.div`
 `
 
 const FormCont = styled.div`
-  margin: 5px;
+  margin: 4px;
   width: 60%;
 `
 
@@ -73,7 +76,5 @@ const Submit = styled.input`
   background-color: black;
   color: #ffffff;
 `
-
-
 
 export default Contact
