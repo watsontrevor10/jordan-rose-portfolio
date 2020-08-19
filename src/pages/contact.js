@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 // Styles
-import { SubCont } from "../styles/mainStyles"
+import { SubCont, FlexCont } from "../styles/mainStyles"
 import { IconContext } from "react-icons"
 import { FaInstagramSquare, FaYoutubeSquare } from "react-icons/fa"
 
@@ -18,21 +18,27 @@ const Contact = () => (
           <li>Drum Lessons</li>
           <li>Drum Questions</li>
         </ul>
-        <IconContext.Provider value={{ size: "6em" }}>
-          <a
-            href="https://www.instagram.com/jrosedrums/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <FaInstagramSquare />
-          </a>
-          <a
-            href="https://www.youtube.com/user/jjrosedrums1"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <FaYoutubeSquare />
-          </a>
+        <IconContext.Provider value={{ size: "5em" }}>
+          <IconCont>
+            <div>
+              <a
+                href="https://www.instagram.com/jrosedrums/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <FaInstagramSquare />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.youtube.com/user/jjrosedrums1"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <FaYoutubeSquare />
+              </a>
+            </div>
+          </IconCont>
         </IconContext.Provider>
       </TextCont>
       <FormCont>
@@ -72,6 +78,16 @@ const TextCont = styled.div`
   width: 40%;
 `
 
+const IconCont = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 1.3em 1em 1.3em 1em;
+  row-gap: 1em;
+  column-gap: 1em;
+`
+
 const FormCont = styled.div`
   margin: 4px;
   width: 60%;
@@ -97,6 +113,11 @@ const Submit = styled.input`
   align-self: center;
   background-color: black;
   color: #ffffff;
+
+  :hover {
+    cursor: pointer;
+    background-color: #237b87;
+  }
 `
 
 export default Contact
