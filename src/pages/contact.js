@@ -3,6 +3,8 @@ import styled from "styled-components"
 
 // Styles
 import { SubCont } from "../styles/mainStyles"
+import { IconContext } from "react-icons"
+import { FaInstagramSquare, FaYoutubeSquare } from "react-icons/fa"
 
 const Contact = () => (
   <SubCont id="contact" style={{}}>
@@ -16,9 +18,29 @@ const Contact = () => (
           <li>Drum Lessons</li>
           <li>Drum Questions</li>
         </ul>
+        <IconContext.Provider value={{ size: "6em" }}>
+          <a
+            href="https://www.instagram.com/jrosedrums/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <FaInstagramSquare />
+          </a>
+          <a
+            href="https://www.youtube.com/user/jjrosedrums1"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <FaYoutubeSquare />
+          </a>
+        </IconContext.Provider>
       </TextCont>
       <FormCont>
-        <form acceptCharset="UTF-8" action="https://getform.io/f/58ac9b67-f81e-4c7f-8753-e0fc1768e5ea" method="POST">
+        <form
+          acceptCharset="UTF-8"
+          action="https://getform.io/f/58ac9b67-f81e-4c7f-8753-e0fc1768e5ea"
+          method="POST"
+        >
           <div
             style={{
               display: "flex",

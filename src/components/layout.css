@@ -76,7 +76,7 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
-  color: rgb(58, 87, 219);
+  color: #237b87;
 }
 abbr[title] {
   border-bottom: none;
