@@ -85,7 +85,7 @@ const About = () => {
               >
                 Charlie Hunter
               </a>
-              ,
+              ,{" "}
               <a
                 href="https://jeffcoffin.com/"
                 target="__blank"

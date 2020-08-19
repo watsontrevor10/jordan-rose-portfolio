@@ -18,15 +18,20 @@
   src: url("../fonts/Gooper0.2-LightItalic.woff2")
 }
 
+@font-face {
+  font-family: "Gooper Light";
+  src: url("../fonts/Gooper0.2-Light.woff2")
+}
+
 html {
-  font-family: "Gooper LightItalic", sans-serif;
+  font-family: "Gooper Light";
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   background-color: #e9ebee;
 }
 body {
   margin: 0;
-  font-family: "Gooper LightItalic", sans-serif;
+  font-family: "Gooper Light";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -65,11 +70,13 @@ template {
 }
 a {
   background-color: transparent;
+  color: black;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
 a:hover {
   outline-width: 0;
+  color: rgb(58, 87, 219);
 }
 abbr[title] {
   border-bottom: none;
@@ -131,7 +138,10 @@ hr {
   overflow: visible;
 }
 button,
-input,
+input {
+  font-family: "Gooper Bold";
+  font-size: large;
+}
 optgroup,
 select,
 textarea {
@@ -225,7 +235,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family:  "Gooper LightItalic", sans-serif;
+  font-family:  "Gooper Bold";
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -398,6 +408,7 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  font-family: "Gooper Light";
 }
 figure {
   margin-left: 0;
@@ -523,6 +534,7 @@ th {
 }
 li {
   margin-bottom: calc(1.45rem / 2);
+  font-family: "Gooper Light";
 }
 ol li {
   padding-left: 0;
@@ -539,6 +551,9 @@ li > ul {
   margin-left: 1.45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
+}
+label {
+  font-family: "Gooper Bold";
 }
 blockquote *:last-child {
   margin-bottom: 0;

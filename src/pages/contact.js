@@ -18,7 +18,7 @@ const Contact = () => (
         </ul>
       </TextCont>
       <FormCont>
-        <form acceptCharset="UTF-8" action="" method="POST">
+        <form acceptCharset="UTF-8" action="https://getform.io/f/58ac9b67-f81e-4c7f-8753-e0fc1768e5ea" method="POST">
           <div
             style={{
               display: "flex",
