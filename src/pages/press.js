@@ -44,7 +44,7 @@ const Press = () => {
           <TkImg />
         </BannerImgCont>
       </BannerCont>
-      <div>
+      <PressCont>
         <FlexCont>
           {press_articles.map(article => {
             return (
@@ -60,10 +60,14 @@ const Press = () => {
             )
           })}
         </FlexCont>
-      </div>
+      </PressCont>
     </div>
   )
 }
+
+const PressCont = styled.div`
+  padding: 1.5em 0 2em 0;
+`
 
 const ImgCont = styled.div`
   max-width: 400px;
