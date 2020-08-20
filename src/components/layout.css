@@ -23,6 +23,16 @@
   src: url("../fonts/Gooper0.2-Light.woff2")
 }
 
+@font-face {
+  font-family: "Gooper SemiBold";
+  src: url("../fonts/Gooper0.2-SemiBold.woff2")
+}
+
+@font-face {
+  font-family: "Gooper SemiBoldItalic";
+  src: url("../fonts/Gooper0.2-SemiBoldItalic.woff2")
+}
+
 html {
   font-family: "Gooper Light";
   -ms-text-size-adjust: 100%;
@@ -458,6 +468,7 @@ fieldset {
   margin-bottom: 1.45rem;
 }
 blockquote {
+  font-family: "Gooper SemiBoldItalic";
   margin-left: 1.45rem;
   margin-right: 1.45rem;
   margin-top: 0;
@@ -524,7 +535,8 @@ b {
   font-weight: bold;
 }
 strong {
-  font-weight: bold;
+  font-family: "Gooper SemiBold";
+  /* font-weight: bold; */
 }
 dt {
   font-weight: bold;
