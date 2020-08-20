@@ -82,7 +82,7 @@ export const FlexCont = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 1.3em 1em 1.3em 1em;
+  margin: 1.3em 1em 1em 1em;
   row-gap: 1em;
   column-gap: 1em;
 `
@@ -111,8 +111,9 @@ export const LinkBox = styled.div`
   padding: .3em;
   max-width: 8em;
   height: 2em;
-  margin: auto;
-  margin-bottom: 3em;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  margin-top: 1em;
 `
 
 // Video.js styles

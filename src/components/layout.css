@@ -151,12 +151,14 @@ button,
 input {
   font-family: "Gooper Bold";
   font-size: large;
+  border: none;
 }
 optgroup,
 select,
 textarea {
   font: inherit;
   margin: 0;
+  border: none;
 }
 optgroup {
   font-weight: 700;
