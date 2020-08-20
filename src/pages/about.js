@@ -170,7 +170,7 @@ const About = () => {
               Please shoot me a note in the <a href="#contact">contact form</a>{" "}
               for inquires about drum recording sessions (remote or in studio),
               gigs, tours, lessons (in person or online), or just to say hello.
-              I look forward to chatting!
+              I look forward to <a href="#contact">chatting!</a>
             </p>
           </div>
         </div>

@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 // Styles
-import { SubCont, FlexCont } from "../styles/mainStyles"
+import { SubCont } from "../styles/mainStyles"
 import { IconContext } from "react-icons"
 import { FaInstagramSquare, FaYoutubeSquare } from "react-icons/fa"
 
