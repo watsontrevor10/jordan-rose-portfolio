@@ -71,11 +71,20 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: stretch;
+
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 const TextCont = styled.div`
   margin: 5px;
   width: 40%;
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 `
 
 const IconCont = styled.div`
@@ -91,6 +100,10 @@ const IconCont = styled.div`
 const FormCont = styled.div`
   margin: 4px;
   width: 60%;
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 `
 
 const FormBox = styled.input`

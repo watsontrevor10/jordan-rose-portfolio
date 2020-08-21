@@ -7,10 +7,8 @@ const HeroImg = () => {
     query {
       placeholderImage: file(relativePath: { eq: "JR-Website-Hero-Final-1.jpg" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1500) {
+          fluid(maxWidth: 1500, jpegProgressive: true) {
             ...GatsbyImageSharpFluid
-            originalName
-            originalImg
           }
         }
       }

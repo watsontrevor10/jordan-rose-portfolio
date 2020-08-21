@@ -159,6 +159,6 @@ export const VideoContainer = styled.div`
   }
 
   @media (max-width: 500px) {
-    height: 10em;
+    height: 12em;
   }
 `

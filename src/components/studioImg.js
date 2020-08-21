@@ -7,7 +7,7 @@ const TkLive = () => {
     query {
       placeholderImage: file(relativePath: { eq: "studio-img.jpg" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1000) {
+          fluid(maxWidth: 1500) {
             ...GatsbyImageSharpFluid
             originalName
             originalImg

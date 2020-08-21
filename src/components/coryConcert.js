@@ -7,10 +7,8 @@ const CoryImg = () => {
     query {
       placeholderImage: file(relativePath: { eq: "cory-concert.jpg" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1000) {
+          fluid(maxWidth: 1500) {
             ...GatsbyImageSharpFluid
-            originalName
-            originalImg
           }
         }
       }
