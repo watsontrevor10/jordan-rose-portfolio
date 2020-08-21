@@ -1,4 +1,5 @@
 import React from "react"
+import LazyLoad from "react-lazy-load"
 import styled from "styled-components"
 import { FlexCont } from "../styles/mainStyles"
 
@@ -18,10 +19,12 @@ const Press = () => {
         "http://www.workingdrummer.net/wp-content/uploads/2017/05/cropped-WD_blk_rect_banner.png",
     },
     {
-      title: "Jordan Rose - Drummer for Theo Katzman, Cory Wong, Caleb Hawley and More",
+      title:
+        "Jordan Rose - Drummer for Theo Katzman, Cory Wong, Caleb Hawley and More",
       article:
         "https://www.discussionsinpercussion.com/home/2020/4/1/170-jordan-rose-drummer-for-theo-katzman-cory-wong-caleb-hawley-amp-more",
-      img_url: "http://alumni.umassband.com/wp-content/uploads/discussions-in-percussion-400x225.png",
+      img_url:
+        "http://alumni.umassband.com/wp-content/uploads/discussions-in-percussion-400x225.png",
     },
   ]
 
@@ -30,12 +33,11 @@ const Press = () => {
       <FlexCont>
         {press_articles.map(article => (
           <ImgCont key={article.title}>
-          <a href={article.article} target="_blank" rel="noopener noreferrer">
-            <img 
-              src={article.img_url}
-              alt={article.title}
-            />
-          </a>
+            <a href={article.article} target="_blank" rel="noopener noreferrer">
+              <LazyLoad offset={1000}>
+                <img src={article.img_url} alt={article.title} />
+              </LazyLoad>
+            </a>
           </ImgCont>
         ))}
       </FlexCont>

@@ -1,9 +1,10 @@
-import React from "react"
-
+import React, {useState} from "react"
+import LazyLoad from "react-lazy-load"
 import { FlexCont } from "../styles/mainStyles"
 
 const Discography = () => {
   const image_width = "300px"
+  
 
   // List of all albums
   const discography = [
@@ -99,7 +100,9 @@ const Discography = () => {
             rel="noopener noreferrer"
             key={disc.id}
           >
-            <img width={image_width} src={disc.image} alt={disc.albumName} />
+            <LazyLoad offset={1000}>
+              <img width={image_width} src={disc.image} alt={disc.albumName} />
+            </LazyLoad>
           </a>
         ))}
       </FlexCont>

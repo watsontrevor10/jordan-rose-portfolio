@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import LazyLoad from "react-lazy-load"
 import { VidFlex, VidThumb, VideoContainer } from "../styles/mainStyles"
 
 const Videos = () => {
@@ -59,7 +60,9 @@ const Videos = () => {
           {videos.map(vid => (
             <VidThumb key={vid.title}>
               <div onClick={() => setPlayVid(vid.src)} role="button">
-                <img src={vid.img} alt={vid.title} />
+                <LazyLoad offset={1000}>
+                  <img src={vid.img} alt={vid.title} />
+                </LazyLoad>
               </div>
             </VidThumb>
           ))}

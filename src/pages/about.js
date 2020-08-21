@@ -1,7 +1,7 @@
 import React from "react"
 
 // Components
-import TkDrum from "../components/tkDrumImg"
+import AboutImg from "../components/aboutImg"
 
 // Styles
 import {
@@ -19,7 +19,7 @@ const About = () => {
           <h1>ABOUT</h1>
         </BannerTitle>
         <BannerImgCont>
-          <TkDrum />
+          <AboutImg />
         </BannerImgCont>
       </BannerCont>
       <SubCont>
