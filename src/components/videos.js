@@ -59,7 +59,12 @@ const Videos = () => {
           {/* video playlist selector, uses YouTube thumbnails as images for gallery view */}
           {videos.map(vid => (
             <VidThumb key={vid.title}>
-              <div onClick={() => setPlayVid(vid.src)} role="button">
+              <div
+                onClick={() => setPlayVid(vid.src)}
+                onKeyDown={() => setPlayVid(vid.src)}
+                role="button"
+                tabIndex={0}
+              >
                 <LazyLoad offset={1000}>
                   <img src={vid.img} alt={vid.title} />
                 </LazyLoad>

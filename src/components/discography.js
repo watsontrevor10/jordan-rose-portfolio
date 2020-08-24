@@ -1,12 +1,9 @@
-import React, {useState} from "react"
+import React from "react"
 import styled from "styled-components"
 import LazyLoad from "react-lazy-load"
 import { FlexCont } from "../styles/mainStyles"
 
 const Discography = () => {
-  const image_width = "300px"
-  
-
   // List of all albums
   const discography = [
     {

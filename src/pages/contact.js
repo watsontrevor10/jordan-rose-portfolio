@@ -54,11 +54,11 @@ const Contact = () => (
             }}
           >
             <label for="name">Name</label>
-            <FormBox type="text" name="name" required />
+            <FormBox type="text" id="name" name="name" required />
             <label for="email">Email</label>
-            <FormBox type="email" name="email" required />
+            <FormBox type="email" id="email" name="email" required />
             <label for="message">Message</label>
-            <TextArea name="message" required />
+            <TextArea name="message" id="message" required />
             <Submit type="submit" value="Submit" />
           </div>
         </form>
