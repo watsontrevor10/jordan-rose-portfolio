@@ -26,11 +26,6 @@ export const HeadCont = styled.div`
   right: 0;
   z-index: 2;
   padding: .5em 0 0 .5em;
-
-  
-  @media (max-width: 500px) {
-    
-  }
 `
 
 export const HeadText = styled.div`
@@ -61,9 +56,9 @@ export const BannerTitle = styled.div`
   color: white;
   z-index: 1;
 
-  @media (max-width: 380px) {
-    top: 1em;
-    left: 0.5em;
+  @media (max-width: 400px) {
+    top: 1.5em;
+    left: 1.5em;
   }
 `
 
