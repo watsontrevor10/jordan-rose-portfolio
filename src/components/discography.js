@@ -1,4 +1,5 @@
 import React, {useState} from "react"
+import styled from "styled-components"
 import LazyLoad from "react-lazy-load"
 import { FlexCont } from "../styles/mainStyles"
 
@@ -101,7 +102,7 @@ const Discography = () => {
             key={disc.id}
           >
             <LazyLoad offset={1000}>
-              <img width={image_width} src={disc.image} alt={disc.albumName} />
+              <Image src={disc.image} alt={disc.albumName} />
             </LazyLoad>
           </a>
         ))}
@@ -109,5 +110,21 @@ const Discography = () => {
     </div>
   )
 }
+
+const Image = styled.img`
+  width: 300px;
+
+  @media (max-width: 768px) {
+    width: 200px;
+  }
+
+  @media (max-width: 578px) {
+    width: 150px;
+  }
+
+  @media (max-width: 422px) {
+    width: 115px;
+  }
+`
 
 export default Discography

@@ -85,6 +85,11 @@ export const FlexCont = styled.div`
   margin: 1.3em 1em 1em 1em;
   row-gap: 1em;
   column-gap: 1em;
+
+  @media (max-width: 500px) {
+    margin: 1.3em .01em .1em .01em;
+    column-gap: 1.5em;
+  }
 `
 
 export const StyleLink = styled.a`
