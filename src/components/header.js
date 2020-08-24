@@ -8,9 +8,9 @@ import { FaBars } from "react-icons/fa"
 
 // Image/Logo
 import JRLogo from "../images/jr-logo.png"
-console.log(JRLogo)
 
 const MobileMenu = props => {
+  // Mobile menu triggered when user clicks FaBars icon at mobile screen widths
   return (
     <MobileContainer>
       <MobileMenuItem onClick={() => props.setMenu()}>
@@ -61,15 +61,10 @@ const Header = ({ siteTitle }) => {
         {/* JR logo */}
         <div style={{ padding: ".3em 5px .2em .3em", zIndex: "2" }}>
           <StyleLink href="#home">
-            <img
-              src={JRLogo}
-              alt="Jordan Rose Logo"
-              style={{ width: "80px", zIndex: "1" }}
-            />
+            <Logo src={JRLogo} alt="Jordan Rose Logo" />
           </StyleLink>
         </div>
-        {/* Nav items */}
-
+        {/* Desktop Nav items, css rules make desktop menu hidden at certain screen widths */}
         <NavItem>
           <StyleLink href="#about">
             <MenuItem>ABOUT</MenuItem>
@@ -90,6 +85,7 @@ const Header = ({ siteTitle }) => {
             <MenuItem>CONTACT</MenuItem>
           </StyleLink>
         </NavItem>
+        {/* Mobile menu button, css media rules hide icon at certain screen widths */}
         <Button onClick={() => setMenu()}>
           <FaBars></FaBars>
         </Button>
@@ -106,6 +102,15 @@ Header.propTypes = {
 Header.defaultProps = {
   siteTitle: ``,
 }
+
+const Logo = styled.img`
+  width: 80px;
+  z-index: 1;
+
+  @media (max-width: 500px) {
+    width: 66px;
+  }
+`
 
 const StyleLink = styled.a`
   color: #fcfdfe;
@@ -135,6 +140,11 @@ const Button = styled.button`
 
   @media (min-width: 750px) {
     display: none;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 25px;
+    top: 0.48em;
   }
 `
 

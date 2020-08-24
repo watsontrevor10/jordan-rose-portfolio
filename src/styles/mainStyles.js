@@ -26,6 +26,11 @@ export const HeadCont = styled.div`
   right: 0;
   z-index: 2;
   padding: .5em 0 0 .5em;
+
+  
+  @media (max-width: 500px) {
+    
+  }
 `
 
 export const HeadText = styled.div`
