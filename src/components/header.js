@@ -107,7 +107,7 @@ const Logo = styled.img`
   width: 80px;
   z-index: 1;
 
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     width: 66px;
   }
 `
@@ -134,7 +134,8 @@ const Button = styled.button`
   transition: all 0.5s;
 
   :hover {
-    color: #434c4f;
+    color: #6bb1c3;
+    /* color: #434c4f; */
     transition: 0.25s;
   }
 
@@ -142,9 +143,10 @@ const Button = styled.button`
     display: none;
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     font-size: 25px;
-    top: 0.48em;
+    top: 0.5em;
+    margin-right: 20px;
   }
 `
 
@@ -154,7 +156,8 @@ const MenuItem = styled.h4`
   margin: 0 0 0 0.7em;
 
   :hover {
-    color: #434c4f;
+    color: #6bb1c3;
+    /* color: #434c4f; */
     transition: 0.25s;
   }
 `
