@@ -1,5 +1,6 @@
 import React from "react"
 import Discography from "../components/discography"
+import LazyLoad from "react-lazy-load"
 
 // Images
 import StudioImg from "../components/discoImage"
@@ -25,8 +26,10 @@ const Work = () => {
           <StudioImg />
         </BannerImgCont>
       </BannerCont>
-      <SubCont style={{}}>
-        <Discography />
+      <SubCont>
+        <LazyLoad offset={1000}>
+          <Discography />
+        </LazyLoad>
       </SubCont>
       <LinkBox>
         <LinkButton
@@ -34,7 +37,7 @@ const Work = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h4 style={{ margin: "auto", position: "relative"}}>Hear More</h4>
+          <h4 style={{ margin: "auto", position: "relative" }}>Hear More</h4>
         </LinkButton>
       </LinkBox>
     </div>

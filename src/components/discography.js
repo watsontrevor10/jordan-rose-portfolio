@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import LazyLoad from "react-lazy-load"
 import { FlexCont } from "../styles/mainStyles"
 
 const Discography = () => {
@@ -98,9 +97,7 @@ const Discography = () => {
             rel="noopener noreferrer"
             key={disc.id}
           >
-            <LazyLoad offset={1000}>
-              <Image src={disc.image} alt={disc.albumName} />
-            </LazyLoad>
+            <Image src={disc.image} alt={disc.albumName} />
           </a>
         ))}
       </FlexCont>

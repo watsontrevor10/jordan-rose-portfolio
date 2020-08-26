@@ -27,11 +27,11 @@ const IndexPage = () => (
       </div>
     </div>
     <About />
-    <Vids />
-    <Studio />
-    <Live />
-    <Press />
-    <Contact />
+      <Vids />
+      <Studio />
+      <Live />
+      <Press />
+      <Contact />
   </Layout>
 )
 
