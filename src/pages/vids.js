@@ -1,4 +1,5 @@
 import React from "react"
+import LazyLoad from "react-lazy-load"
 
 // Styles
 import {
@@ -26,7 +27,9 @@ const Vids = () => {
         </BannerImgCont>
       </BannerCont>
       <SubCont>
-        <Videos />
+        <LazyLoad offset={1000}>
+          <Videos />
+        </LazyLoad>
       </SubCont>
     </div>
   )

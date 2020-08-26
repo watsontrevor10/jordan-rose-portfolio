@@ -7,10 +7,9 @@ const TkDrumset = () => {
     query {
       placeholderImage: file(relativePath: { eq: "about.jpg" }) {
         childImageSharp {
-          fluid(jpegQuality: 100, maxWidth: 1500, jpegProgressive: true) {
+          fluid(quality: 100, maxWidth: 1500) {
             ...GatsbyImageSharpFluid
             originalName
-            originalImg
           }
         }
       }

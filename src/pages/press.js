@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import LazyLoad from "react-lazy-load"
 
 // components
 import TkImg from "../components/pressImage"
@@ -45,21 +46,23 @@ const Press = () => {
         </BannerImgCont>
       </BannerCont>
       <PressCont>
-        <FlexCont>
-          {press_articles.map(article => {
-            return (
-              <ImgCont key={article.title}>
-                <a
-                  href={article.article}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <StyledImg src={article.img_url} alt={article.title} />
-                </a>
-              </ImgCont>
-            )
-          })}
-        </FlexCont>
+        <LazyLoad offset={1000}>
+          <FlexCont>
+            {press_articles.map(article => {
+              return (
+                <ImgCont key={article.title}>
+                  <a
+                    href={article.article}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <StyledImg src={article.img_url} alt={article.title} />
+                  </a>
+                </ImgCont>
+              )
+            })}
+          </FlexCont>
+        </LazyLoad>
       </PressCont>
     </div>
   )
@@ -74,7 +77,6 @@ const ImgCont = styled.div`
 `
 
 const StyledImg = styled.img`
-  width: 100%;
   height: 100px;
 `
 
